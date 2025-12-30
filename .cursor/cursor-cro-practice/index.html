@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ausley&#39;s Chevelle Parts — Simplified Landing Page (Structure)</title>
+    <meta
+      name="description"
+      content="Simplified HTML recreation of the chevelle.com landing page layout. Focused on structure and accessibility."
+    />
+    <style>
+      :root {
+        --bg: #0b0d10;
+        --surface: #12161b;
+        --surface-2: #171d24;
+        --text: #e9eef5;
+        --muted: #aab6c5;
+        --border: rgba(255, 255, 255, 0.12);
+        --accent: #ff2a2a;
+        --focus: #7cc4ff;
+        --max: 1100px;
+        --radius: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 10% -10%, rgba(255, 42, 42, 0.18), transparent 60%),
+          radial-gradient(900px 500px at 95% 0%, rgba(124, 196, 255, 0.12), transparent 60%), var(--bg);
+        color: var(--text);
+        line-height: 1.45;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 2px;
+        border-radius: 10px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 12px;
+        top: 10px;
+        background: #000;
+        color: #fff;
+        padding: 10px 12px;
+        border-radius: 10px;
+        transform: translateY(-150%);
+        transition: transform 0.2s ease;
+        z-index: 999;
+      }
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(11, 13, 16, 0.7);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .topbar {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 18px;
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 220px;
+      }
+      .brand strong {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .brand span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .contact {
+        display: none;
+        gap: 10px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 8px 10px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .btn {
+        appearance: none;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+      }
+      .btn.primary {
+        border-color: rgba(255, 42, 42, 0.5);
+        background: rgba(255, 42, 42, 0.12);
+      }
+
+      nav {
+        border-top: 1px solid var(--border);
+      }
+
+      .navrow {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px 18px 16px;
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .search {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .search label {
+        position: absolute;
+        left: -9999px;
+      }
+      .search input[type="search"] {
+        width: 100%;
+        padding: 12px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+      }
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+      }
+      .menu a {
+        text-decoration: none;
+      }
+
+      main {
+        padding: 22px 0 40px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .card {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px;
+      }
+
+      .hero h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        line-height: 1.15;
+      }
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .hero .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      .section-head h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+      .section-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .category-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      details {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        overflow: clip;
+      }
+      summary {
+        cursor: pointer;
+        padding: 12px;
+        font-weight: 600;
+      }
+      details > .subcats {
+        padding: 0 12px 12px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .subcats ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 12px;
+      }
+      .product {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 12px;
+        padding: 12px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .thumb {
+        width: 72px;
+        height: 72px;
+        border-radius: 12px;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .product h3 {
+        margin: 0 0 4px;
+        font-size: 15px;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 13px;
+        margin: 0;
+      }
+      .price-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 8px;
+      }
+      .price {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .fineprint {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 26px 0;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .footer-grid h3 {
+        margin: 0 0 8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .footer-grid ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      @media (min-width: 780px) {
+        .contact {
+          display: flex;
+        }
+        .navrow {
+          grid-template-columns: 1.2fr 1fr;
+          align-items: center;
+        }
+        .grid {
+          grid-template-columns: 1fr 1.35fr;
+          align-items: start;
+        }
+        .category-list {
+          grid-template-columns: 1fr;
+        }
+        .products {
+          grid-template-columns: 1fr 1fr;
+        }
+        .split {
+          grid-template-columns: 1fr 1fr;
+          align-items: start;
+        }
+        .footer-grid {
+          grid-template-columns: 1.2fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Simplified structural recreation of https://chevelle.com/ -->
+    <header>
+      <div class="topbar" role="banner" aria-label="Site header">
+        <div class="brand" aria-label="Ausley's Chevelle Parts">
+          <strong>Ausley&#39;s Chevelle Parts</strong>
+          <span>Chevelle &amp; GM A-Body restoration parts (simplified)</span>
+        </div>
+
+        <div class="contact" aria-label="Contact">
+          <span class="pill" aria-label="Phone">336-228-6701</span>
+          <span class="pill" aria-label="Email">info@chevelle.com</span>
+        </div>
+
+        <div class="actions" aria-label="Account and cart actions">
+          <a class="btn" href="#account">Login / Sign Up</a>
+          <a class="btn" href="#wishlist">Wishlist</a>
+          <a class="btn primary" href="#cart" aria-label="Cart, 0 items">Cart (0)</a>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <div class="navrow">
+          <form class="search" role="search" aria-label="Site search">
+            <label for="q">Search products</label>
+            <input id="q" name="q" type="search" placeholder="Search (part number, keyword…)" autocomplete="off" />
+            <button class="btn primary" type="submit">Search</button>
+            <button class="btn" type="reset">Reset</button>
+          </form>
+
+          <div class="menu" aria-label="Main menu links">
+            <a class="btn" href="#price-list">Product Price List</a>
+            <a class="btn" href="#tech-tips">Tech Tips</a>
+            <a class="btn" href="#show-schedule">Show Schedule</a>
+            <a class="btn" href="#about">About</a>
+            <a class="btn" href="#why-buy">Why Buy From Ausley&#39;s</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn" href="#blog">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="card hero" aria-label="Hero">
+        <h1>Chevelle Restoration Parts, Catalogs &amp; Tech Help</h1>
+        <p>
+          This page recreates the <strong>structure</strong> of the chevelle.com landing page: navigation, category menu,
+          featured products, catalog download, testimonials, and footer.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#shop">Shop by category</a>
+          <a class="btn" href="#catalog">Download catalog</a>
+          <a class="btn" href="#new-products">New products</a>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Main content">
+        <aside class="card" id="shop" aria-label="Shop by category">
+          <div class="section-head">
+            <h2>Shop By Category</h2>
+            <p>Expandable list (simplified)</p>
+          </div>
+
+          <ul class="category-list">
+            <li>
+              <details open>
+                <summary>*New Products*</summary>
+                <div class="subcats">
+                  Browse recently added items and featured releases.
+                  <ul>
+                    <li>New arrivals</li>
+                    <li>Featured upgrades</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Apparel and Accessories</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Gifts</li>
+                    <li>Shirts</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Chassis and Suspension</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Brakes (pads/shoes, kits, hardware, booster/master)</li>
+                    <li>Brake Lines</li>
+                    <li>Gas Tank (kits, straps, sending units, fuel injection)</li>
+                    <li>Steering / Power Steering</li>
+                    <li>Shocks and Coil Springs</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Electrical</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Complete Wiring Kits</li>
+                    <li>Dash / Dome / Engine / Rear Lamp Harnesses</li>
+                    <li>Relays &amp; Misc. Hardware</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Engine</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Air Cleaner / Decals / Brackets</li>
+                    <li>Radiator / Fan Shroud / Cooling Lines</li>
+                    <li>Heater / Air Conditioning</li>
+                    <li>LS Conversion</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Exterior</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Emblems / Moldings / Bumpers</li>
+                    <li>Glass (windshield, door, quarter, rear)</li>
+                    <li>Headlight / Tail Light / Backup</li>
+                    <li>Wheels</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Interior</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Dash / Gauges / Consoles</li>
+                    <li>Seats / Seat Belts / Brackets</li>
+                    <li>Headliner / Visors / Trim</li>
+                    <li>Heater / Air Condition controls &amp; vents</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Literature</summary>
+                <div class="subcats">
+                  <ul>
+                    <li>Assembly Manuals</li>
+                    <li>Code Books</li>
+                    <li>Owner Manuals</li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="card" id="new-products" aria-label="Featured products">
+          <div class="section-head">
+            <h2>Featured / New Products</h2>
+            <p>Product cards (simplified)</p>
+          </div>
+
+          <div class="products" role="list">
+            <article class="product" role="listitem" aria-label="2025 Chevelle Parts Catalog">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>2025 CHEVELLE PARTS CATALOG</h3>
+                <p class="meta">Quick view · Digital catalog (free)</p>
+                <div class="price-row">
+                  <span class="price">$0.00</span>
+                  <a class="btn primary" href="#catalog">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem" aria-label="Billet aluminum hood hinges">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>1968–72 Chevelle Hood Hinges (Billet Aluminum)</h3>
+                <p class="meta">Choose options · Diamond Black</p>
+                <div class="price-row">
+                  <span class="price">$595.00</span>
+                  <a class="btn" href="#product">Choose Options</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem" aria-label="Keyless entry system with trunk release">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>1970–72 (A-Body) 2 Door Keyless Entry w/ Trunk Release</h3>
+                <p class="meta">Quick view · Kit</p>
+                <div class="price-row">
+                  <span class="price">$394.95</span>
+                  <a class="btn primary" href="#cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem" aria-label="FiTech total package EFI kit">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>FiTech “Total Package EFI” Kit (600 HP)</h3>
+                <p class="meta">Quick view · 1970–72 Chevelle fitment</p>
+                <div class="price-row">
+                  <span class="price">$1,999.95</span>
+                  <a class="btn primary" href="#cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem" aria-label="Door panel clips">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>1964–72 Chevelle Door Panel Clips (Each)</h3>
+                <p class="meta">Correct clip to hold the door panel</p>
+                <div class="price-row">
+                  <span class="price">$1.00</span>
+                  <a class="btn primary" href="#cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem" aria-label="Gas tank kit for fuel injection">
+              <div class="thumb" aria-hidden="true">IMG</div>
+              <div>
+                <h3>1968–69 Chevelle Gas Tank Kit (Fuel Injection / LS)</h3>
+                <p class="meta">Quick view · High quality kit</p>
+                <div class="price-row">
+                  <span class="price">$549.00</span>
+                  <a class="btn primary" href="#cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="split" aria-label="Secondary sections">
+        <section class="card" id="catalog" aria-label="Download catalog">
+          <div class="section-head">
+            <h2>Download Our Catalog</h2>
+            <p>Callout section</p>
+          </div>
+          <p class="fineprint">
+            “Prices in the printed catalog and downloadable PDF are subject to change. For accurate prices, search the part
+            number on the site.”
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#download">Download now</a>
+            <a class="btn" href="#price-list">View price list</a>
+          </div>
+        </section>
+
+        <section class="card" id="testimonials" aria-label="Testimonials">
+          <div class="section-head">
+            <h2>Testimonials</h2>
+            <p>Quotes (simplified)</p>
+          </div>
+          <article class="card" style="margin: 0 0 10px; padding: 12px">
+            <p style="margin: 0 0 6px">“You guys have been awesome… customer service is outstanding.”</p>
+            <p class="meta" style="margin: 0">— Steve M.</p>
+          </article>
+          <article class="card" style="margin: 0 0 10px; padding: 12px">
+            <p style="margin: 0 0 6px">“Shipping is incredible… looks like they will go in with no problems.”</p>
+            <p class="meta" style="margin: 0">— Jeff &amp; Justine</p>
+          </article>
+          <article class="card" style="margin: 0; padding: 12px">
+            <p style="margin: 0 0 6px">“Very prompt… I have restored 2 Chevelles… appreciate your standing behind what you sell.”</p>
+            <p class="meta" style="margin: 0">— Terry</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="card" id="promo" aria-label="Promotion">
+        <div class="section-head">
+          <h2>Promo Banner</h2>
+          <p>Example of a site-wide callout</p>
+        </div>
+        <p class="fineprint">
+          <strong>25% Off Ausley&#39;s T-Shirts*</strong> — “For a limited time, spend $250 on other products and receive 25%
+          off shirts. Add shirts to cart to receive discount.”
+        </p>
+      </section>
+    </main>
+
+    <footer aria-label="Footer">
+      <div class="wrap footer-grid">
+        <section aria-label="Contact us">
+          <h3>Contact Us</h3>
+          <p class="fineprint" style="margin: 0 0 8px">
+            <strong>1.800.228.7539</strong><br />
+            info@chevelle.com<br />
+            300 South Main Street, Graham, NC 27253
+          </p>
+          <p class="fineprint" style="margin: 0">
+            Source page: <a href="https://chevelle.com/" rel="noopener noreferrer">chevelle.com</a>
+          </p>
+        </section>
+
+        <section aria-label="Accounts and orders">
+          <h3>Accounts &amp; Orders</h3>
+          <ul>
+            <li><a href="#gift-certificates">Gift Certificates</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="#account">Login or Sign Up</a></li>
+            <li><a href="#order-status">Order Status</a></li>
+            <li><a href="#shipping">Shipping &amp; Returns</a></li>
+            <li><a href="#sitemap">Sitemap</a></li>
+          </ul>
+        </section>
+
+        <section aria-label="Navigate">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="#price-list">Product Price List</a></li>
+            <li><a href="#tech-tips">Tech Tips By Ausley&#39;s</a></li>
+            <li><a href="#show-schedule">Show Schedule</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-buy">Why Buy From Ausley&#39;s</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#restoration">Restoration Program</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="wrap" aria-label="Copyright" style="padding-top: 14px">
+        <p class="fineprint" style="margin: 0">
+          © Ausley&#39;s Chevelle Parts — Simplified structure mock. All product names used here are for layout recreation only.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe POS System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pos-container">
+        <!-- Header -->
+        <header class="pos-header">
+            <div class="header-content">
+                <h1 class="logo">☕ Cafe POS</h1>
+                <div class="header-info">
+                    <span class="current-date" id="currentDate"></span>
+                    <button class="btn-secondary" id="viewOrdersBtn">View Orders</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pos-main">
+            <!-- Left Panel: Menu -->
+            <section class="menu-section">
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">All Items</button>
+                    <button class="category-btn" data-category="beverages">Beverages</button>
+                    <button class="category-btn" data-category="food">Food</button>
+                    <button class="category-btn" data-category="pastries">Pastries</button>
+                    <button class="category-btn" data-category="specials">Specials</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu items will be dynamically generated -->
+                </div>
+            </section>
+
+            <!-- Right Panel: Cart & Checkout -->
+            <aside class="cart-section">
+                <div class="cart-header">
+                    <h2>Current Order</h2>
+                    <button class="btn-clear" id="clearCartBtn">Clear</button>
+                </div>
+
+                <!-- Cart Items -->
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart">
+                        <p>Your cart is empty</p>
+                        <span>Select items to add to order</span>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary" id="cartSummary" style="display: none;">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (10%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+
+                <!-- Checkout Button -->
+                <div class="checkout-section">
+                    <button class="btn-checkout" id="checkoutBtn" disabled>
+                        <span>Process Payment</span>
+                        <span class="total-amount" id="checkoutTotal">$0.00</span>
+                    </button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Payment</h2>
+                <button class="modal-close" id="closePaymentModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-total">
+                    <span>Total Amount:</span>
+                    <span class="amount-large" id="paymentTotal">$0.00</span>
+                </div>
+                <div class="payment-methods">
+                    <button class="payment-method-btn active" data-method="cash">
+                        <span class="method-icon">💵</span>
+                        <span>Cash</span>
+                    </button>
+                    <button class="payment-method-btn" data-method="card">
+                        <span class="method-icon">💳</span>
+                        <span>Card</span>
+                    </button>
+                    <button class="payment-method-btn" data-method="mobile">
+                        <span class="method-icon">📱</span>
+                        <span>Mobile Pay</span>
+                    </button>
+                </div>
+                <div class="cash-amount" id="cashAmountSection" style="display: none;">
+                    <label for="cashReceived">Cash Received:</label>
+                    <input type="number" id="cashReceived" step="0.01" placeholder="0.00">
+                    <div class="change-display" id="changeDisplay" style="display: none;">
+                        <span>Change:</span>
+                        <span id="changeAmount">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancelPaymentBtn">Cancel</button>
+                <button class="btn-primary" id="confirmPaymentBtn">Confirm Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order History Modal -->
+    <div class="modal" id="ordersModal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Order History</h2>
+                <button class="modal-close" id="closeOrdersModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="orders-list" id="ordersList">
+                    <!-- Orders will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Modal -->
+    <div class="modal" id="receiptModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Receipt</h2>
+                <button class="modal-close" id="closeReceiptModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="receipt" id="receiptContent">
+                    <!-- Receipt content will be displayed here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="printReceiptBtn">Print</button>
+                <button class="btn-primary" id="closeReceiptBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

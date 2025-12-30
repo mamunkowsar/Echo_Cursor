@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Tesco Modern";
+  src: url("https://www.tescomobile.com/static/version1764138413/frontend/TescoMobile/default/en_GB/fonts/TescoModernReg/TESCOModern-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --tesco-blue: #00539f;
+  --bg: #f6f6f6;
+  --promo-bg: #e5e8ea;
+  --promo-border: #ccc;
+  --text-muted: #666;
+  --focus: #2b7cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Tesco Modern", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+}
+
+img {
+  display: block;
+}
+
+/* Variant switcher: set <body data-variant="v1|v2|v3"> */
+body[data-variant="v1"] .promo-wrap:not([data-variant="v1"]),
+body[data-variant="v2"] .promo-wrap:not([data-variant="v2"]),
+body[data-variant="v3"] .promo-wrap:not([data-variant="v3"]) {
+  display: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  padding: 10px 12px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 100;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.skip-link:focus-visible,
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Frame */
+.figma-desktop {
+  width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+  background: var(--bg);
+}
+
+/* Image slices */
+.slice {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slice--1 {
+  height: 816px;
+}
+.slice--2 {
+  height: 908px;
+}
+.slice--3 {
+  height: 1716.5px;
+}
+.slice--4 {
+  height: 1716.5px;
+}
+.slice--5 {
+  height: 457px;
+}
+
+.slice__img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* slice 1: h=210.36%, top=0 */
+.slice__img--1 {
+  top: 0;
+  height: 210.36%;
+  object-fit: cover;
+}
+
+/* slice 2: h=189.04%, top=-89.1% */
+.slice__img--2 {
+  top: -89.1%;
+  height: 189.04%;
+  object-fit: cover;
+}
+
+.slice__img--cover {
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slice 5: h=375.82%, top=-0.22% */
+.slice__img--5 {
+  top: -0.22%;
+  height: 375.82%;
+  object-fit: cover;
+}
+
+/* Promo container (exact measurements from Figma) */
+.promo-wrap {
+  position: relative;
+  width: 1218px;
+  height: 250px;
+  margin-left: 111px; /* x from Figma */
+  background: var(--promo-bg);
+  border: 1px solid var(--promo-border);
+  overflow: clip;
+  padding: 16px 12px;
+}
+
+.promo-wrap__inner {
+  position: relative;
+  width: 1194px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Figma: gap-[8px] */
+}
+
+.promo-block {
+  width: 480px;
+}
+
+.tag {
+  margin: 0 0 8px;
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 1px 8px 3px;
+  background: var(--tesco-blue);
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.promo-title {
+  margin: 0;
+  color: var(--tesco-blue);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.promo-desc {
+  margin: 0;
+  width: 480px; /* Figma container max width */
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo-actions {
+  margin-top: 0;
+  padding-top: 12px; /* Figma margin container: pt-[12px] */
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 999px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 2px solid var(--tesco-blue);
+}
+
+.btn-primary {
+  background: var(--tesco-blue);
+  color: #fff;
+  width: 244px; /* Figma: 244x44 */
+}
+
+.btn-primary__icon {
+  width: 28px; /* Margin frame */
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+.btn-primary__icon img {
+  width: 12px;
+  height: 20px;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--tesco-blue);
+  gap: 8px;
+  width: 198px; /* Figma: 198x44 */
+}
+.btn-secondary__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-secondary__icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Phone image positioned exactly */
+.promo-phone {
+  position: absolute;
+  width: 329.488px;
+  height: 488.552px;
+  right: 48.51px;
+  top: calc(50% + 72.28px);
+  transform: translateY(-50%);
+  object-fit: cover;
+  object-position: 50% 50%;
+  pointer-events: none;
+}
+
+

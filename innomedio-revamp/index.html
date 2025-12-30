@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Innomedio - Digital agency sinds 2012. Strategie, Branding, Development en Marketing oplossingen voor jouw bedrijf." />
+    <title>Innomedio - Digital Agency | Strategie, Branding, Development & Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Innomedio - Digital Agency">
+          <span class="brand-text">innomedio</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary">
+          <a href="#oplossingen">Oplossingen</a>
+          <a href="#succesverhalen">Succesverhalen</a>
+          <a href="#over-ons">Over ons</a>
+          <a href="#insights">Insights</a>
+          <a class="nav-cta" href="#contact">Let's talk!</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. Header with company video, headline, subtitle, and CTAs -->
+      <section id="top" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-video-wrapper">
+              <video class="hero-video" autoplay muted loop playsinline aria-label="Innomedio company video">
+                <source src="./assets/innomedio-video.mp4" type="video/mp4" />
+                <!-- Fallback image if video not available -->
+                <img src="./assets/innomedio-hero.jpg" alt="Innomedio team" />
+              </video>
+              <div class="hero-video-overlay"></div>
+            </div>
+            <div class="hero-text">
+              <h1>
+                Digital agency sinds 2012
+                <span class="accent">Jouw succes is ons doel</span>
+              </h1>
+              <p class="lead">
+                Innomedio is de ultieme bestemming voor álles wat met marketing te maken heeft! 
+                Strategie, Branding, Development en Marketing in één totaaloplossing.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#contact">Gratis adviesgesprek</a>
+                <a class="btn btn-secondary" href="#succesverhalen">Bekijk projecten</a>
+                <button class="btn btn-tertiary" id="leadBotBtn">Chat met ons</button>
+              </div>
+              <div class="hero-stats" role="list" aria-label="Company highlights">
+                <div class="stat" role="listitem">
+                  <div class="stat-value">13+</div>
+                  <div class="stat-label">Jaar ervaring</div>
+                </div>
+                <div class="stat" role="listitem">
+                  <div class="stat-value">10</div>
+                  <div class="stat-label">Digital natives</div>
+                </div>
+                <div class="stat" role="listitem">
+                  <div class="stat-value">100%</div>
+                  <div class="stat-label">Kempen-power</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Most recent case studies -->
+      <section id="succesverhalen" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Succesverhalen</h2>
+            <p class="muted">Idee, ontwerp en ontwikkeling monden uit in een gebruiksvriendelijk en aantrekkelijk eindproduct.</p>
+          </div>
+
+          <div class="case-studies-grid">
+            <article class="case-study-card">
+              <div class="case-study-image">
+                <img src="./assets/cases/9-logo.jpg" alt="9-logo project" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="card-title">9-logo</h3>
+                <p class="muted">Complete rebranding en website ontwikkeling</p>
+                <a href="#" class="case-study-link">Bekijk project →</a>
+              </div>
+            </article>
+
+            <article class="case-study-card">
+              <div class="case-study-image">
+                <img src="./assets/cases/chatgpt-contactcenter.jpg" alt="ChatGPT in het contactcenter project" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="card-title">ChatGPT in het contactcenter</h3>
+                <p class="muted">Innovatieve AI-integratie voor klantenservice</p>
+                <a href="#" class="case-study-link">Bekijk project →</a>
+              </div>
+            </article>
+
+            <article class="case-study-card">
+              <div class="case-study-image">
+                <img src="./assets/cases/boorx.jpg" alt="BoorX project" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="card-title">BoorX</h3>
+                <p class="muted">E-commerce platform en digitale strategie</p>
+                <a href="#" class="case-study-link">Bekijk project →</a>
+              </div>
+            </article>
+
+            <article class="case-study-card">
+              <div class="case-study-image">
+                <img src="./assets/cases/heustractors.jpg" alt="Heustractors project" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="card-title">Heustractors</h3>
+                <p class="muted">Website redesign en content strategie</p>
+                <a href="#" class="case-study-link">Bekijk project →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-footer">
+            <a href="#" class="btn btn-secondary">Meer projecten</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Client logos (no slider) -->
+      <section class="section alt client-logos-section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Onze klanten</h2>
+            <p class="muted">Bedrijven die op ons vertrouwen voor hun digitale transformatie</p>
+          </div>
+
+          <div class="client-logos-grid">
+            <div class="client-logo">
+              <img src="./assets/clients/ifacto.svg" alt="iFacto" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/smart-fill.svg" alt="Smart Fill" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/9-logo.svg" alt="9-logo" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/boorx.svg" alt="BoorX" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/heustractors.svg" alt="Heustractors" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/client-6.svg" alt="Client" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/client-7.svg" alt="Client" />
+            </div>
+            <div class="client-logo">
+              <img src="./assets/clients/client-8.svg" alt="Client" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Services -->
+      <section id="oplossingen" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Onze oplossingen</h2>
+            <p class="muted">Innomedio is de ultieme bestemming voor álles wat met marketing te maken heeft!</p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">📊</div>
+              <h3 class="card-title">Strategie</h3>
+              <ul class="service-list">
+                <li>Digitale strategie</li>
+                <li>Employer branding</li>
+                <li>Content (Re)branding</li>
+              </ul>
+              <a href="#" class="service-link">Meer info →</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🎨</div>
+              <h3 class="card-title">Branding</h3>
+              <ul class="service-list">
+                <li>Huisstijl</li>
+                <li>Videografie</li>
+                <li>Fotografie</li>
+                <li>Logo-ontwerp</li>
+                <li>Grafisch design</li>
+                <li>Copywriting</li>
+              </ul>
+              <a href="#" class="service-link">Meer info →</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">💻</div>
+              <h3 class="card-title">Development</h3>
+              <ul class="service-list">
+                <li>Technische analyse</li>
+                <li>Website</li>
+                <li>E-commerce</li>
+                <li>Webapp</li>
+              </ul>
+              <a href="#" class="service-link">Meer info →</a>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">📈</div>
+              <h3 class="card-title">Marketing</h3>
+              <ul class="service-list">
+                <li>SEO</li>
+                <li>SEA</li>
+                <li>Social media</li>
+                <li>E-mail</li>
+              </ul>
+              <a href="#" class="service-link">Meer info →</a>
+            </div>
+          </div>
+
+          <div class="configurator-cta">
+            <div class="configurator-content">
+              <h3>Ontdek welke oplossing bij jou past</h3>
+              <p class="muted">Gebruik onze interactieve configurator om een op maat gemaakte oplossing samen te stellen</p>
+              <button class="btn btn-primary" id="configuratorBtn">Start configurator</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Why Innomedio? -->
+      <section id="over-ons" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Waarom Innomedio?</h2>
+            <p class="muted">Digital agency sinds 2012 - Innovatieve media voor jouw succes</p>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon">👥</div>
+              <h3 class="card-title">10 Digital natives</h3>
+              <p class="muted">Ons team bestaat uit 10 digital natives. Met uiteenlopende competenties vullen ze mekaar perfect aan, wat resulteert in een mooie lijst van successen.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">🏆</div>
+              <h3 class="card-title">13+ jaar ervaring</h3>
+              <p class="muted">Da's geen beginnersgeluk maar vakmanschap met ervaring. Sinds 2012 helpen we bedrijven groeien met digitale oplossingen.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">⚡</div>
+              <h3 class="card-title">100% Kempen-power</h3>
+              <p class="muted">Wij spreken vloeiend "handen-uit-de-mouwen". Geen praatjes, maar resultaten.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">🎯</div>
+              <h3 class="card-title">Totaaloplossing</h3>
+              <p class="muted">Van strategie tot uitvoering, alles onder één dak. Geen gedoe met meerdere partners.</p>
+            </div>
+          </div>
+
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <div class="trust-badge-icon">⭐</div>
+              <div>
+                <div class="trust-badge-value">4.9/5</div>
+                <div class="trust-badge-label">9 reviews</div>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <div class="trust-badge-icon">🏅</div>
+              <div>
+                <div class="trust-badge-value">Google Partner</div>
+                <div class="trust-badge-label">Gecertificeerd</div>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <div class="trust-badge-icon">🤝</div>
+              <div>
+                <div class="trust-badge-value">Leadinfo Partner</div>
+                <div class="trust-badge-label">Gecertificeerd</div>
+              </div>
+            </div>
+            <div class="trust-badge">
+              <div class="trust-badge-icon">📊</div>
+              <div>
+                <div class="trust-badge-value">Flanders IT</div>
+                <div class="trust-badge-label">Lid</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Working method -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Onze werkwijze</h2>
+            <p class="muted">Van eerste gesprek tot lancering - transparant en resultaatgericht</p>
+          </div>
+
+          <div class="workflow-stepper">
+            <article class="workflow-step">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3 class="card-title">Kennismaking & Analyse</h3>
+                <p class="muted">We luisteren naar je verhaal, analyseren je uitdagingen en kijken waarmee we je kunnen helpen.</p>
+              </div>
+            </article>
+
+            <article class="workflow-step">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3 class="card-title">Strategie & Plan</h3>
+                <p class="muted">Samen stellen we een op maat gemaakte strategie op die perfect aansluit bij jouw doelen.</p>
+              </div>
+            </article>
+
+            <article class="workflow-step">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3 class="card-title">Ontwerp & Ontwikkeling</h3>
+                <p class="muted">Ons team van experts zet de strategie om in concrete, gebruiksvriendelijke oplossingen.</p>
+              </div>
+            </article>
+
+            <article class="workflow-step">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h3 class="card-title">Lancering & Opvolging</h3>
+                <p class="muted">We lanceren je project en blijven je ondersteunen met rapportage en optimalisatie.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Technology logos -->
+      <section class="section alt tech-logos-section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Technologieën & Partners</h2>
+            <p class="muted">We werken met de beste tools en platforms in de markt</p>
+          </div>
+
+          <div class="tech-logos-grid">
+            <div class="tech-logo">
+              <img src="./assets/tech/google.svg" alt="Google" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/facebook.svg" alt="Facebook" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/sulu.svg" alt="Sulu CMS" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/instagram.svg" alt="Instagram" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/linkedin.svg" alt="LinkedIn" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/pinterest.svg" alt="Pinterest" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/leadinfo.svg" alt="Leadinfo" />
+            </div>
+            <div class="tech-logo">
+              <img src="./assets/tech/shopify.svg" alt="Shopify" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Most recent news items -->
+      <section id="insights" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Nieuws & Insights</h2>
+            <p class="muted">Blijf op de hoogte van de laatste trends en ontwikkelingen</p>
+          </div>
+
+          <div class="news-grid">
+            <article class="news-card">
+              <div class="news-image">
+                <img src="./assets/news/kmo-portefeuille.jpg" alt="KMO-portefeuille artikel" />
+              </div>
+              <div class="news-content">
+                <span class="news-date">28 nov. 2025</span>
+                <span class="news-tag">news</span>
+                <h3 class="card-title">KMO-portefeuille wordt afgeschaft in 2026, wat nu?</h3>
+                <p class="muted">Wat betekent de afschaffing van de KMO-portefeuille voor jouw bedrijf? We leggen het uit.</p>
+                <a href="#" class="news-link">Lees meer →</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-image">
+                <img src="./assets/news/seo-2026.jpg" alt="SEO 2026 artikel" />
+              </div>
+              <div class="news-content">
+                <span class="news-date">26 nov. 2025</span>
+                <span class="news-tag">news</span>
+                <h3 class="card-title">Is SEO nog relevant in 2026 of neemt GEO het volledig over?</h3>
+                <p class="muted">Een blik op de toekomst van zoekmachine optimalisatie en lokale marketing.</p>
+                <a href="#" class="news-link">Lees meer →</a>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <div class="news-image">
+                <img src="./assets/news/performance-max.jpg" alt="Performance Max artikel" />
+              </div>
+              <div class="news-content">
+                <span class="news-date">3 nov. 2025</span>
+                <span class="news-tag">news</span>
+                <h3 class="card-title">Performance Max 2025: eindelijk meer controle en betere targeting</h3>
+                <p class="muted">Wat zijn de nieuwe mogelijkheden van Performance Max en hoe gebruik je ze optimaal?</p>
+                <a href="#" class="news-link">Lees meer →</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-footer">
+            <a href="#" class="btn btn-secondary">Meer insights</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. FAQ -->
+      <section class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Veelgestelde vragen</h2>
+            <p class="muted">Alles wat je wilt weten over Innomedio en onze diensten</p>
+          </div>
+
+          <div class="accordion" role="region" aria-label="FAQs">
+            <details class="acc-item" open>
+              <summary>Wat doet Innomedio precies?</summary>
+              <div class="acc-body">
+                <p class="muted">Innomedio is een digital agency die alles aanbiedt wat met marketing te maken heeft. We helpen bedrijven met strategie, branding, development en marketing. Van website ontwikkeling tot SEO, van logo-ontwerp tot social media campagnes - alles onder één dak.</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Hoe lang duurt een project gemiddeld?</summary>
+              <div class="acc-body">
+                <p class="muted">De duur van een project hangt af van de omvang en complexiteit. Een website redesign kan 6-12 weken duren, terwijl een complete rebranding 3-6 maanden kan vergen. We bespreken altijd eerst de tijdlijn tijdens het kennismakingsgesprek.</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Werken jullie alleen voor bedrijven in de Kempen?</summary>
+              <div class="acc-body">
+                <p class="muted">Hoewel we trots zijn op onze Kempen-roots, werken we voor klanten in heel België en daarbuiten. Onze "Kempen-power" staat voor hands-on mentaliteit en resultaatgericht werken, ongeacht waar je gevestigd bent.</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Bieden jullie ook ondersteuning na de lancering?</summary>
+              <div class="acc-body">
+                <p class="muted">Ja, absoluut! We bieden rapportage en opvolging na de lancering. We monitoren de prestaties, optimaliseren waar nodig en blijven je ondersteunen bij verdere groei.</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Kunnen we een gratis adviesgesprek inplannen?</summary>
+              <div class="acc-body">
+                <p class="muted">Ja, graag! We komen met plezier vrijblijvend langs om kennis te maken. Zo kunnen we luisteren naar je verhaal en kijken waarmee we je kunnen helpen. Gebruik de knop hieronder om een afspraak in te plannen.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. CTA banner -->
+      <section id="contact" class="section cta-banner">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Eens brainstormen?</h2>
+            <p class="lead">Wij komen met plezier vrijblijvend langs om kennis te maken. Zo kunnen we luisteren naar je verhaal en kijken waarmee we je kunnen helpen.</p>
+            <div class="cta-actions">
+              <button class="btn btn-primary" id="appointmentBtn">Plan een afspraak</button>
+              <a class="btn btn-secondary" href="tel:+3233217258">Bel ons: +32 (0)3 321 72 58</a>
+              <a class="btn btn-tertiary" href="mailto:info@innomedio.be">info@innomedio.be</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-partners">
+            <h3>Onze partners</h3>
+            <div class="footer-partner-logos">
+              <div class="footer-partner-logo">
+                <img src="./assets/partners/google-partner.svg" alt="Google Partner" />
+                <span>Google Partner</span>
+              </div>
+              <div class="footer-partner-logo">
+                <img src="./assets/partners/leadinfo-partner.svg" alt="Leadinfo Partner" />
+                <span>Leadinfo Partner</span>
+              </div>
+              <div class="footer-partner-logo">
+                <img src="./assets/partners/flanders-it.svg" alt="Flanders IT" />
+                <span>Flanders IT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-main">
+          <div class="footer-col">
+            <h4>Navigeer naar</h4>
+            <ul class="footer-links">
+              <li><a href="#oplossingen">Oplossingen</a></li>
+              <li><a href="#succesverhalen">Succesverhalen</a></li>
+              <li><a href="#over-ons">Over ons</a></li>
+              <li><a href="#insights">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Oplossingen</h4>
+            <ul class="footer-links">
+              <li><a href="#oplossingen">Strategie</a></li>
+              <li><a href="#oplossingen">Branding</a></li>
+              <li><a href="#oplossingen">Development</a></li>
+              <li><a href="#oplossingen">Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Over ons</h4>
+            <ul class="footer-links">
+              <li><a href="#over-ons">Over Innomedio</a></li>
+              <li><a href="#contact">Jobs</a></li>
+              <li><a href="#contact">Let's talk!</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <address class="footer-contact">
+              <p>Steenovenstraat 2<br />2390 Malle<br />België</p>
+              <p>
+                <a href="mailto:info@innomedio.be">info@innomedio.be</a><br />
+                <a href="tel:+3233217258">+32 (0)3 321 72 58</a>
+              </p>
+              <p>
+                <a href="mailto:work@innomedio.be">work@innomedio.be</a><br />
+                <small>Voor sollicitaties</small>
+              </p>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-newsletter">
+            <h4>Blijf op de hoogte</h4>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Je e-mailadres" required aria-label="E-mailadres voor nieuwsbrief" />
+              <button type="submit" class="btn btn-primary">Inschrijven</button>
+            </form>
+          </div>
+
+          <div class="footer-legal">
+            <p>&copy; <span id="year"></span> Innomedio. All rights reserved.</p>
+            <div class="footer-legal-links">
+              <a href="#">Privacy</a>
+              <a href="#">Cookies</a>
+              <a href="#">Algemene voorwaarden</a>
+              <a href="#">Help</a>
+              <a href="#">KMO-portefeuille</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lead Bot Modal -->
+    <dialog class="modal" id="leadBotModal" aria-label="Chat met Innomedio">
+      <div class="modal-card">
+        <div class="modal-head">
+          <h2 class="modal-title">Chat met ons</h2>
+          <button class="icon-btn" type="button" aria-label="Close" id="closeLeadBot">✕</button>
+        </div>
+        <div class="lead-bot-content">
+          <div class="lead-bot-message">
+            <p>Hallo! 👋 Ik ben de Innomedio assistent. Waarmee kan ik je helpen?</p>
+          </div>
+          <div class="lead-bot-options">
+            <button class="lead-bot-option">Ik wil een gratis adviesgesprek</button>
+            <button class="lead-bot-option">Ik heb een vraag over jullie diensten</button>
+            <button class="lead-bot-option">Ik wil een offerte aanvragen</button>
+            <button class="lead-bot-option">Ik zoek informatie over een project</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Appointment Booking Modal -->
+    <dialog class="modal" id="appointmentModal" aria-label="Plan een afspraak">
+      <form class="modal-card" id="appointmentForm" method="dialog">
+        <div class="modal-head">
+          <h2 class="modal-title">Plan een afspraak</h2>
+          <button class="icon-btn" type="button" value="cancel" aria-label="Close">✕</button>
+        </div>
+        <div class="form-fields">
+          <div class="field">
+            <label for="appointmentName">Naam *</label>
+            <input id="appointmentName" name="name" type="text" required placeholder="Je naam" />
+          </div>
+          <div class="field">
+            <label for="appointmentEmail">E-mail *</label>
+            <input id="appointmentEmail" name="email" type="email" required placeholder="je@email.com" />
+          </div>
+          <div class="field">
+            <label for="appointmentPhone">Telefoon</label>
+            <input id="appointmentPhone" name="phone" type="tel" placeholder="+32 ..." />
+          </div>
+          <div class="field">
+            <label for="appointmentDate">Gewenste datum *</label>
+            <input id="appointmentDate" name="date" type="date" required />
+          </div>
+          <div class="field">
+            <label for="appointmentTime">Gewenste tijd *</label>
+            <input id="appointmentTime" name="time" type="time" required />
+          </div>
+          <div class="field">
+            <label for="appointmentMessage">Bericht</label>
+            <textarea id="appointmentMessage" name="message" rows="4" placeholder="Vertel ons waarover je wilt praten..."></textarea>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
+          <button class="btn btn-secondary" type="button" value="cancel">Annuleren</button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Configurator Modal -->
+    <dialog class="modal" id="configuratorModal" aria-label="Oplossing configurator">
+      <div class="modal-card configurator-modal">
+        <div class="modal-head">
+          <h2 class="modal-title">Ontdek jouw ideale oplossing</h2>
+          <button class="icon-btn" type="button" aria-label="Close" id="closeConfigurator">✕</button>
+        </div>
+        <div class="configurator-steps">
+          <div class="configurator-step active" data-step="1">
+            <h3>Wat is je hoofddoel?</h3>
+            <div class="configurator-options">
+              <button class="config-option" data-value="strategy">Meer online zichtbaarheid</button>
+              <button class="config-option" data-value="branding">Nieuwe huisstijl/rebranding</button>
+              <button class="config-option" data-value="development">Nieuwe website/app</button>
+              <button class="config-option" data-value="marketing">Meer leads/verkopen</button>
+            </div>
+          </div>
+          <div class="configurator-step" data-step="2">
+            <h3>Welke diensten heb je nodig?</h3>
+            <div class="configurator-options" id="serviceOptions"></div>
+          </div>
+          <div class="configurator-step" data-step="3">
+            <h3>Jouw op maat gemaakte oplossing</h3>
+            <div class="configurator-result" id="configuratorResult"></div>
+            <button class="btn btn-primary" id="requestQuoteBtn">Vraag offerte aan</button>
+          </div>
+        </div>
+        <div class="configurator-nav">
+          <button class="btn btn-secondary" id="prevStep" disabled>Vorige</button>
+          <button class="btn btn-primary" id="nextStep">Volgende</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

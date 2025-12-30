@@ -1,0 +1,7 @@
+
+- Optimize for mobile-first UX
+- Follow CRO best practices
+- Improve clarity before aesthetics
+- Prefer semantic HTML
+- Maintain accessibility (contrast, labels, ARIA)
+- Avoid unnecessary animations

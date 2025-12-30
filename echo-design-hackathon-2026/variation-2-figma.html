@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="en" data-figma-export="true">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EchoLogyX Design Hackathon 2026 — Variation 2 (Designathon-style landing page) — Optimized for Figma import." />
+    <title>EchoLogyX Design Hackathon 2026 — Variation 2 (Figma Export)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Embedded CSS for Figma import - all styles from variation-2.css */
+      :root {
+        --bg: #050507;
+        --ink: #0b0b10;
+        --paper: #f6f3ef;
+        --white: #ffffff;
+        --muted: rgba(255, 255, 255, 0.72);
+        --muted2: rgba(255, 255, 255, 0.6);
+        --line: rgba(255, 255, 255, 0.14);
+        --line2: rgba(255, 255, 255, 0.22);
+        --violet: #6f3bff;
+        --aqua: #24ffd1;
+        --magenta: #ff4dff;
+        --shadow: 0 18px 0 rgba(0, 0, 0, 0.55);
+        --shadow2: 0 26px 70px rgba(0, 0, 0, 0.55);
+        --r: 22px;
+        --r2: 16px;
+        --container: 1120px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        color-scheme: dark;
+        scroll-behavior: smooth;
+      }
+
+      body.v2 {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: rgba(255, 255, 255, 0.92);
+        background:
+          radial-gradient(900px 600px at 15% 10%, rgba(111, 59, 255, 0.45), transparent 60%),
+          radial-gradient(900px 600px at 90% 15%, rgba(36, 255, 209, 0.22), transparent 60%),
+          radial-gradient(900px 600px at 70% 90%, rgba(255, 77, 255, 0.12), transparent 55%),
+          var(--bg);
+      }
+
+      body.v2::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.14;
+        mix-blend-mode: overlay;
+        background-image:
+          repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 3px),
+          repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 4px);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 0.12em 0.36em;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .container {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 18px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(5, 5, 7, 0.72);
+        backdrop-filter: blur(14px);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+      }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 14px 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo-mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        border: 2px solid rgba(255, 255, 255, 0.16);
+        background: linear-gradient(135deg, rgba(111, 59, 255, 0.95), rgba(36, 255, 209, 0.85));
+        box-shadow: 0 14px 0 rgba(0, 0, 0, 0.55);
+      }
+      .logo-text {
+        display: grid;
+        line-height: 1.1;
+      }
+      .logo-title {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+      .logo-sub {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .topnav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .topnav a {
+        padding: 10px 10px;
+        color: var(--muted);
+        border-radius: 12px;
+        border: 1px solid transparent;
+      }
+
+      .hero {
+        padding: 34px 0 0;
+      }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 18px;
+        align-items: start;
+        position: relative;
+      }
+      .hero-stamp {
+        position: absolute;
+        right: 22px;
+        top: 18px;
+        width: 120px;
+        height: 120px;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.22);
+        border: 2px dashed rgba(255, 255, 255, 0.22);
+        display: grid;
+        place-items: center;
+        text-align: center;
+        transform: rotate(8deg);
+      }
+      .stamp-top,
+      .stamp-bot {
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.72);
+      }
+      .stamp-mid {
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .kicker {
+        display: inline-flex;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.16);
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 800;
+        letter-spacing: -0.01em;
+        width: fit-content;
+      }
+
+      .hero-title {
+        margin: 14px 0 10px;
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        font-size: clamp(2.3rem, 4.4vw, 4.3rem);
+        line-height: 0.92;
+      }
+      .hero-title-accent {
+        display: inline-block;
+        margin-top: 6px;
+        color: rgba(255, 255, 255, 0.9);
+        -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.55);
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.65);
+      }
+      .hero-lead {
+        margin: 0;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+
+      .hero-meta {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .meta {
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.14);
+        padding: 12px 12px;
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0.45);
+      }
+      .meta-label {
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.78rem;
+      }
+      .meta-value {
+        margin-top: 4px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-countdown {
+        position: sticky;
+        top: 86px;
+      }
+
+      .count-card {
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.18);
+        box-shadow: var(--shadow2);
+        padding: 14px;
+      }
+      .count-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .count-title {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+      .pill-btn {
+        border: 2px solid rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.04);
+        color: rgba(255, 255, 255, 0.92);
+        border-radius: 999px;
+        padding: 8px 10px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .count-grid {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 1fr 6px 1fr 6px 1fr 6px 1fr;
+        align-items: center;
+        gap: 10px;
+      }
+      .sep {
+        width: 6px;
+        height: 28px;
+        border-radius: 6px;
+        background: linear-gradient(180deg, rgba(36, 255, 209, 0.8), rgba(111, 59, 255, 0.8));
+      }
+      .time {
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 12px 8px;
+      }
+      .time-num {
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: 2.1rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.65);
+      }
+      .time-lbl {
+        color: rgba(255, 255, 255, 0.66);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.72rem;
+      }
+      .count-foot {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .note {
+        color: rgba(255, 255, 255, 0.78);
+        font-weight: 800;
+      }
+
+      .ticker {
+        margin-top: 22px;
+        border-top: 2px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+        background: rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .ticker-track {
+        display: flex;
+        gap: 24px;
+        padding: 12px 0;
+        white-space: nowrap;
+      }
+      .ticker-track span {
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.65);
+      }
+      .ticker-track span:nth-child(3n) {
+        color: rgba(36, 255, 209, 0.92);
+      }
+      .ticker-track span:nth-child(4n) {
+        color: rgba(255, 77, 255, 0.92);
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+      .section-head {
+        display: grid;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+      .section-title {
+        margin: 0;
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+      .section-sub {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .apply {
+        border-top: 2px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .pricing {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+      .price {
+        border: 2px dashed rgba(255, 255, 255, 0.18);
+        border-radius: 22px;
+        background: rgba(0, 0, 0, 0.18);
+        padding: 16px;
+        box-shadow: 0 14px 0 rgba(0, 0, 0, 0.55);
+      }
+      .price.ghost {
+        border-style: solid;
+        background: linear-gradient(135deg, rgba(111, 59, 255, 0.2), rgba(36, 255, 209, 0.1));
+      }
+      .price-title {
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .price-range {
+        margin-top: 6px;
+        color: rgba(255, 255, 255, 0.66);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+      .price-amount {
+        margin-top: 10px;
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: 0.04em;
+      }
+      .price-note {
+        color: rgba(255, 255, 255, 0.68);
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+
+      .forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .card {
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        border-radius: 22px;
+        background: rgba(0, 0, 0, 0.18);
+        box-shadow: var(--shadow);
+        padding: 16px;
+      }
+      .card-title {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        margin: 0 0 10px;
+      }
+
+      .form {
+        display: grid;
+        gap: 12px;
+      }
+      .field {
+        display: grid;
+        gap: 7px;
+      }
+      label {
+        font-weight: 900;
+        letter-spacing: -0.01em;
+      }
+      input,
+      select,
+      textarea {
+        background: rgba(0, 0, 0, 0.18);
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255, 255, 255, 0.92);
+        border-radius: 16px;
+        padding: 12px 12px;
+        outline: none;
+        font: inherit;
+      }
+      textarea {
+        resize: vertical;
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .muted {
+        color: var(--muted);
+        margin: 0;
+      }
+      .small {
+        font-size: 0.92rem;
+        color: var(--muted2);
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        padding: 11px 14px;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        cursor: pointer;
+        user-select: none;
+      }
+      .btn-black {
+        background: rgba(0, 0, 0, 0.85);
+        color: rgba(255, 255, 255, 0.95);
+      }
+      .btn-white {
+        background: rgba(255, 255, 255, 0.92);
+        color: rgba(0, 0, 0, 0.9);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .why {
+        border-top: 2px solid rgba(255, 255, 255, 0.06);
+      }
+      .why-cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .why-card {
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.18);
+        padding: 16px;
+        box-shadow: 0 14px 0 rgba(0, 0, 0, 0.55);
+      }
+      .why-kicker {
+        color: rgba(255, 255, 255, 0.72);
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+      .why-big {
+        margin-top: 10px;
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .event {
+        background: rgba(255, 255, 255, 0.02);
+        border-top: 2px solid rgba(255, 255, 255, 0.06);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+      }
+      .details {
+        display: grid;
+        gap: 12px;
+      }
+      .detail {
+        display: grid;
+        grid-template-columns: 78px 1fr;
+        gap: 12px;
+        align-items: start;
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.18);
+        padding: 14px;
+      }
+      .detail-no {
+        font-family: Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.82);
+        text-shadow: 0 3px 0 rgba(0, 0, 0, 0.65);
+      }
+      .detail-title {
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+
+      .rules-download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: linear-gradient(135deg, rgba(111, 59, 255, 0.2), rgba(36, 255, 209, 0.1));
+        padding: 16px;
+        box-shadow: 0 14px 0 rgba(0, 0, 0, 0.55);
+        margin-bottom: 14px;
+      }
+      .rules-title {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+
+      .faq {
+        display: grid;
+        gap: 10px;
+      }
+      .qa {
+        border-radius: 18px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.18);
+        padding: 4px 0;
+      }
+      .qa summary {
+        cursor: pointer;
+        padding: 14px 14px;
+        font-weight: 900;
+        letter-spacing: -0.01em;
+        list-style: none;
+      }
+      .qa summary::-webkit-details-marker {
+        display: none;
+      }
+      .qa summary::after {
+        content: "▾";
+        float: right;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .qa[open] summary::after {
+        content: "▴";
+      }
+      .qa-body {
+        padding: 0 14px 14px;
+      }
+
+      .people {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .person {
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.14);
+        background: rgba(0, 0, 0, 0.18);
+        padding: 16px;
+        box-shadow: 0 14px 0 rgba(0, 0, 0, 0.55);
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .avatar {
+        width: 46px;
+        height: 46px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        background: rgba(0, 0, 0, 0.18);
+        border: 2px solid rgba(255, 255, 255, 0.14);
+      }
+      .person-name {
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+      .person-role {
+        color: rgba(255, 255, 255, 0.66);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.76rem;
+        margin-top: 4px;
+      }
+
+      .logos {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .logo-card {
+        border-radius: 22px;
+        border: 2px dashed rgba(255, 255, 255, 0.18);
+        background: rgba(0, 0, 0, 0.16);
+        min-height: 90px;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .footer {
+        border-top: 2px solid rgba(255, 255, 255, 0.08);
+        background: rgba(0, 0, 0, 0.22);
+        padding: 22px 0;
+      }
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 980px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+        }
+        .hero-stamp {
+          position: static;
+          margin-left: auto;
+          margin-bottom: 6px;
+        }
+        .hero-meta {
+          grid-template-columns: 1fr;
+        }
+        .hero-countdown {
+          position: static;
+        }
+        .pricing {
+          grid-template-columns: 1fr;
+        }
+        .forms {
+          grid-template-columns: 1fr;
+        }
+        .why-cards {
+          grid-template-columns: 1fr;
+        }
+        .people {
+          grid-template-columns: 1fr;
+        }
+        .logos {
+          grid-template-columns: 1fr 1fr;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .detail {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="v2">
+    <header class="topbar" role="banner" data-component="header">
+      <div class="container topbar-inner">
+        <a class="logo" href="#top" aria-label="EchoLogyX Design Hackathon 2026" data-component="logo">
+          <span class="logo-mark" aria-hidden="true" data-element="logo-mark">EX</span>
+          <span class="logo-text" data-element="logo-text">
+            <span class="logo-title" data-element="logo-title">EchoLogyX</span>
+            <span class="logo-sub" data-element="logo-sub">Design Hackathon 2026</span>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Primary" data-component="navigation">
+          <a href="#apply" data-nav-item="apply">Apply</a>
+          <a href="#why" data-nav-item="why">Why</a>
+          <a href="#event" data-nav-item="event">Event</a>
+          <a href="#rules" data-nav-item="rules">Rules</a>
+          <a href="#jury" data-nav-item="jury">Jury</a>
+          <a href="#partners" data-nav-item="partners">Partners</a>
+          <a href="#faq" data-nav-item="faq">FAQs</a>
+          <a class="btn btn-black" href="#apply" data-nav-item="cta">Apply right away</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" data-component="main">
+      <section id="top" class="hero" data-component="hero-section">
+        <div class="container hero-inner">
+          <div class="hero-stamp" aria-hidden="true" data-element="hero-stamp">
+            <div class="stamp-top">UNWRAPPED</div>
+            <div class="stamp-mid">EX</div>
+            <div class="stamp-bot">2026</div>
+          </div>
+
+          <div class="hero-copy" data-element="hero-copy">
+            <p class="kicker" data-element="kicker">India's boldest UX sprint is back!</p>
+            <h1 class="hero-title" data-element="hero-title">
+              SKILLS YOU SHOULD HAVE LEARNED IN SCHOOL
+              <span class="hero-title-accent" data-element="hero-title-accent">— BUT DIDN'T</span>
+            </h1>
+            <p class="hero-lead" data-element="hero-lead">
+              Register, collaborate, and ship an end-to-end UX solution in a limited time window. Built as a static
+              landing page + local demo forms.
+            </p>
+
+            <div class="hero-meta" role="list" aria-label="Event highlights" data-element="hero-meta">
+              <div class="meta" role="listitem" data-element="meta-item">
+                <div class="meta-label">DATE</div>
+                <div class="meta-value">2026-06-20</div>
+              </div>
+              <div class="meta" role="listitem" data-element="meta-item">
+                <div class="meta-label">DURATION</div>
+                <div class="meta-value">24–48 Hours</div>
+              </div>
+              <div class="meta" role="listitem" data-element="meta-item">
+                <div class="meta-label">PARTICIPANTS</div>
+                <div class="meta-value">120+ Designers</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-countdown" aria-label="Countdown" data-component="countdown-card">
+            <div class="count-card">
+              <div class="count-head">
+                <div class="count-title">Countdown</div>
+                <button class="pill-btn" type="button">Edit date/time</button>
+              </div>
+              <div class="count-grid" aria-live="polite">
+                <div class="time" data-element="time-unit">
+                  <div class="time-num">00</div>
+                  <div class="time-lbl">Days</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time" data-element="time-unit">
+                  <div class="time-num">00</div>
+                  <div class="time-lbl">Hours</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time" data-element="time-unit">
+                  <div class="time-num">00</div>
+                  <div class="time-lbl">Minutes</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time" data-element="time-unit">
+                  <div class="time-num">00</div>
+                  <div class="time-lbl">Seconds</div>
+                </div>
+              </div>
+
+              <div class="count-foot">
+                <div class="note">Happening on 20 Jun</div>
+                <a class="btn btn-white" href="#apply">Apply now</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="ticker" aria-hidden="true" data-component="ticker">
+          <div class="ticker-track">
+            <span>NO FOCUS</span><span>NO FOCUS</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span>
+            <span>TOO BUSY</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span><span>TOO BUSY</span>
+            <span>NO FOCUS</span><span>NO FOCUS</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="section apply" data-component="apply-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Apply right away!</h2>
+            <p class="section-sub">Submit your registration now; save your submission link when ready (local demo).</p>
+          </div>
+
+          <div class="pricing" data-component="pricing-cards">
+            <div class="price" data-element="price-card">
+              <div class="price-title">Early Bird Registration</div>
+              <div class="price-range">2nd – 4th July</div>
+              <div class="price-amount">₹ 799</div>
+              <div class="price-note">per person</div>
+              <a class="btn btn-black" href="#forms">Apply</a>
+            </div>
+            <div class="price" data-element="price-card">
+              <div class="price-title">Regular Registration</div>
+              <div class="price-range">5th – 8th July</div>
+              <div class="price-amount">₹ 999</div>
+              <div class="price-note">per person</div>
+              <a class="btn btn-black" href="#forms">Apply</a>
+            </div>
+            <div class="price ghost" data-element="price-card">
+              <div class="price-title">Audience Pass</div>
+              <div class="price-range">Free entry</div>
+              <div class="price-amount">RSVP</div>
+              <div class="price-note">Limited seating</div>
+              <a class="btn btn-white" href="#contact">RSVP</a>
+            </div>
+          </div>
+
+          <div id="forms" class="forms" data-component="forms">
+            <form class="card form" data-element="registration-form">
+              <h3 class="card-title">Registration</h3>
+              <div class="field">
+                <label for="regName">Full name</label>
+                <input id="regName" name="name" autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="regEmail">Email</label>
+                <input id="regEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="regRole">Role</label>
+                <select id="regRole" name="role">
+                  <option value="" selected disabled>Select one</option>
+                  <option>Student</option>
+                  <option>Professional</option>
+                  <option>Hobbyist</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="actions">
+                <button class="btn btn-black" type="submit">Register</button>
+                <button class="btn btn-white" type="reset">Clear</button>
+              </div>
+              <p class="muted small">Stored locally in your browser.</p>
+            </form>
+
+            <form class="card form" data-element="submission-form">
+              <h3 class="card-title">Submission</h3>
+              <div class="field">
+                <label for="subTeam">Team / participant</label>
+                <input id="subTeam" name="team" placeholder="Team Echo / Your name" />
+              </div>
+              <div class="field">
+                <label for="subTitle">Title</label>
+                <input id="subTitle" name="title" placeholder="UX solution for X" />
+              </div>
+              <div class="field">
+                <label for="subLink">Prototype link</label>
+                <input id="subLink" name="link" type="url" placeholder="https://figma.com/..." />
+              </div>
+              <div class="field">
+                <label for="subSummary">Summary</label>
+                <textarea id="subSummary" name="summary" rows="4" placeholder="Problem → approach → impact"></textarea>
+              </div>
+              <div class="actions">
+                <button class="btn btn-black" type="submit">Save submission</button>
+                <button class="btn btn-white" type="reset">Clear</button>
+              </div>
+              <p class="muted small">Stored locally in your browser.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section why" data-component="why-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Why participate?</h2>
+            <p class="section-sub">Fast-paced learning, networking, and real-world problem solving.</p>
+          </div>
+
+          <div class="why-cards" role="list" data-component="why-cards">
+            <article class="why-card" role="listitem" data-element="why-card">
+              <div class="why-kicker">Win cash prizes of up to</div>
+              <div class="why-big">₹ 3,00,000</div>
+              <p class="muted">Collaborate, compete, and conquer—take home prizes and goodies.</p>
+            </article>
+            <article class="why-card" role="listitem" data-element="why-card">
+              <div class="why-kicker">Collaborate & network with</div>
+              <div class="why-big">Budding designers</div>
+              <p class="muted">Meet creative people, team up, and build your design circle.</p>
+            </article>
+            <article class="why-card" role="listitem" data-element="why-card">
+              <div class="why-kicker">Get mentored by top</div>
+              <div class="why-big">Industry pioneers</div>
+              <p class="muted">Ask questions, get feedback, and grow quickly with guidance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="section event" data-component="event-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Event details</h2>
+            <p class="section-sub">Everything you need to know at a glance.</p>
+          </div>
+
+          <div class="details" data-component="details-list">
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">01</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Registration process</h3>
+                <p class="muted">Limited seats. Apply now and watch your inbox for a confirmation email.</p>
+              </div>
+            </article>
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">02</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Date and time</h3>
+                <p class="muted">Two-day sprint. Set the kickoff time in the countdown (editable).</p>
+              </div>
+            </article>
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">03</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Pricing</h3>
+                <p class="muted">Update pricing based on your official plan (free / paid / audience pass).</p>
+              </div>
+            </article>
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">04</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Location</h3>
+                <p class="muted">In-house / online / hybrid — update based on your event format.</p>
+              </div>
+            </article>
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">05</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Team allocation</h3>
+                <p class="muted">Solo sign-up, team allocation on the day (optional). Update to your rules.</p>
+              </div>
+            </article>
+            <article class="detail" data-element="detail-item">
+              <div class="detail-no">06</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Awards</h3>
+                <p class="muted">Award ceremony after final presentations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="section rules" data-component="rules-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Rules and regulations</h2>
+            <p class="section-sub">Download the rulebook and read the key points.</p>
+          </div>
+
+          <div class="rules-download" data-component="rules-download">
+            <div>
+              <div class="rules-title">Rules & regulations to get you started</div>
+              <p class="muted">Add your PDF in <code>assets/</code> and link it to the button.</p>
+            </div>
+            <a class="btn btn-black" href="#">Download PDF</a>
+          </div>
+
+          <div class="faq" role="region" aria-label="Rules" data-component="rules-faq">
+            <details class="qa" open data-element="qa-item">
+              <summary>Eligibility & team size</summary>
+              <div class="qa-body">
+                <p class="muted">Open to everyone; solo or teams up to 4. One submission per team.</p>
+              </div>
+            </details>
+            <details class="qa" data-element="qa-item">
+              <summary>Submission format</summary>
+              <div class="qa-body">
+                <p class="muted">Prototype link + short write-up (problem → solution → impact).</p>
+              </div>
+            </details>
+            <details class="qa" data-element="qa-item">
+              <summary>Original work</summary>
+              <div class="qa-body">
+                <p class="muted">Use licensed assets and cite sources. No plagiarism.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="jury" class="section jury" data-component="jury-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Jury</h2>
+            <p class="section-sub">Replace placeholders with real jury information.</p>
+          </div>
+
+          <div class="people" role="list" data-component="people-grid">
+            <article class="person" role="listitem" data-element="person-card">
+              <div class="avatar" aria-hidden="true">L</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">VP, Design</div>
+                <p class="muted">"Excited to meet and mentor participants."</p>
+              </div>
+            </article>
+            <article class="person" role="listitem" data-element="person-card">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">Leading Design</div>
+                <p class="muted">"Clarity, craft, and storytelling win."</p>
+              </div>
+            </article>
+            <article class="person" role="listitem" data-element="person-card">
+              <div class="avatar" aria-hidden="true">U</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">Experience Lead</div>
+                <p class="muted">"Make complex things feel effortless."</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="section partners" data-component="partners-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Sponsors & partners</h2>
+            <p class="section-sub">Placeholders—swap for real logos.</p>
+          </div>
+
+          <div class="logos" data-component="logo-grid">
+            <div class="logo-card" data-element="logo-placeholder">Platinum Sponsor</div>
+            <div class="logo-card" data-element="logo-placeholder">Food Partner</div>
+            <div class="logo-card" data-element="logo-placeholder">Community Partner</div>
+            <div class="logo-card" data-element="logo-placeholder">Tool Partner</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faqs" data-component="faq-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">When in doubt, always ask</h2>
+            <p class="section-sub">Common questions (edit to match your policies).</p>
+          </div>
+
+          <div class="faq" role="region" aria-label="FAQs" data-component="faq-list">
+            <details class="qa" open data-element="qa-item">
+              <summary>Is this an online or in-house event?</summary>
+              <div class="qa-body">
+                <p class="muted">Update based on your official format (online, in-house, or hybrid).</p>
+              </div>
+            </details>
+            <details class="qa" data-element="qa-item">
+              <summary>Who's eligible to participate?</summary>
+              <div class="qa-body">
+                <p class="muted">Define eligibility (students, early-career, open to all, etc.).</p>
+              </div>
+            </details>
+            <details class="qa" data-element="qa-item">
+              <summary>Do we have to pay to participate?</summary>
+              <div class="qa-body">
+                <p class="muted">Add pricing details (if any), or keep it free.</p>
+              </div>
+            </details>
+            <details class="qa" data-element="qa-item">
+              <summary>Are we allowed to form our own teams?</summary>
+              <div class="qa-body">
+                <p class="muted">Clarify solo vs team sign-ups and maximum team size.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" data-component="contact-section">
+        <div class="container">
+          <div class="section-head" data-element="section-head">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">Update these with official organizer channels.</p>
+          </div>
+          <div class="contact-grid" data-component="contact-grid">
+            <div class="card" data-element="contact-card">
+              <div class="card-title">Organizers</div>
+              <p class="muted"><strong>Email:</strong> hello@echologyx.example</p>
+              <p class="muted"><strong>Discord:</strong> EchoLogyX Community</p>
+            </div>
+            <div class="card" data-element="contact-card">
+              <div class="card-title">Downloads</div>
+              <p class="muted">Put your PDF rulebook at <code>assets/EchoLogyX-Rulebook.pdf</code>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-component="footer">
+      <div class="container footer-inner">
+        <p class="muted">© 2026 EchoLogyX</p>
+        <a class="muted" href="./index.html">Back to main version</a>
+      </div>
+    </footer>
+  </body>
+</html>
+

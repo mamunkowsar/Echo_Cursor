@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EchoLogyX Design Hackathon 2026 — Variation 2 (Designathon-style landing page)." />
+    <title>EchoLogyX Design Hackathon 2026 — Variation 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./variation-2.css" />
+  </head>
+  <body class="v2">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="container topbar-inner">
+        <a class="logo" href="#top" aria-label="EchoLogyX Design Hackathon 2026">
+          <span class="logo-mark" aria-hidden="true">EX</span>
+          <span class="logo-text">
+            <span class="logo-title">EchoLogyX</span>
+            <span class="logo-sub">Design Hackathon 2026</span>
+          </span>
+        </a>
+
+        <nav class="topnav" aria-label="Primary">
+          <a href="#apply">Apply</a>
+          <a href="#why">Why</a>
+          <a href="#event">Event</a>
+          <a href="#rules">Rules</a>
+          <a href="#jury">Jury</a>
+          <a href="#partners">Partners</a>
+          <a href="#faq">FAQs</a>
+          <a class="btn btn-black" href="#apply">Apply right away</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#apply">Apply</a>
+        <a href="#why">Why participate</a>
+        <a href="#event">Event details</a>
+        <a href="#rules">Rules</a>
+        <a href="#jury">Jury</a>
+        <a href="#partners">Partners</a>
+        <a href="#faq">FAQs</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-stamp" aria-hidden="true">
+            <div class="stamp-top">UNWRAPPED</div>
+            <div class="stamp-mid">EX</div>
+            <div class="stamp-bot">2026</div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="kicker">India’s boldest UX sprint is back!</p>
+            <h1 class="hero-title">
+              SKILLS YOU SHOULD HAVE LEARNED IN SCHOOL
+              <span class="hero-title-accent">— BUT DIDN’T</span>
+            </h1>
+            <p class="hero-lead">
+              Register, collaborate, and ship an end-to-end UX solution in a limited time window. Built as a static
+              landing page + local demo forms.
+            </p>
+
+            <div class="hero-meta">
+              <div class="meta">
+                <div class="meta-label">DATE</div>
+                <div class="meta-value"><span id="v2EventDate">2026-06-20</span></div>
+              </div>
+              <div class="meta">
+                <div class="meta-label">DURATION</div>
+                <div class="meta-value">24–48 Hours</div>
+              </div>
+              <div class="meta">
+                <div class="meta-label">PARTICIPANTS</div>
+                <div class="meta-value">120+ Designers</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-countdown" aria-label="Countdown">
+            <div class="count-card">
+              <div class="count-head">
+                <div class="count-title">Countdown</div>
+                <button class="pill-btn" type="button" id="v2EditDateBtn">Edit date/time</button>
+              </div>
+              <div class="count-grid" aria-live="polite">
+                <div class="time">
+                  <div class="time-num" data-part="days">00</div>
+                  <div class="time-lbl">Days</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time">
+                  <div class="time-num" data-part="hours">00</div>
+                  <div class="time-lbl">Hours</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time">
+                  <div class="time-num" data-part="minutes">00</div>
+                  <div class="time-lbl">Minutes</div>
+                </div>
+                <div class="sep" aria-hidden="true"></div>
+                <div class="time">
+                  <div class="time-num" data-part="seconds">00</div>
+                  <div class="time-lbl">Seconds</div>
+                </div>
+              </div>
+
+              <div class="count-foot">
+                <div class="note">Happening on <span id="v2HappeningOn">20 Jun</span></div>
+                <a class="btn btn-white" href="#apply">Apply now</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker-track">
+            <span>NO FOCUS</span><span>NO FOCUS</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span>
+            <span>TOO BUSY</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span><span>TOO BUSY</span>
+            <span>NO FOCUS</span><span>NO FOCUS</span><span>NO FOCUS</span><span>SELF DOUBT</span><span>PROCRASTINATION</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="section apply">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Apply right away!</h2>
+            <p class="section-sub">Submit your registration now; save your submission link when ready (local demo).</p>
+          </div>
+
+          <div class="pricing">
+            <div class="price">
+              <div class="price-title">Early Bird Registration</div>
+              <div class="price-range">2nd – 4th July</div>
+              <div class="price-amount">₹ 799</div>
+              <div class="price-note">per person</div>
+              <a class="btn btn-black" href="#forms">Apply</a>
+            </div>
+            <div class="price">
+              <div class="price-title">Regular Registration</div>
+              <div class="price-range">5th – 8th July</div>
+              <div class="price-amount">₹ 999</div>
+              <div class="price-note">per person</div>
+              <a class="btn btn-black" href="#forms">Apply</a>
+            </div>
+            <div class="price ghost">
+              <div class="price-title">Audience Pass</div>
+              <div class="price-range">Free entry</div>
+              <div class="price-amount">RSVP</div>
+              <div class="price-note">Limited seating</div>
+              <a class="btn btn-white" href="#contact">RSVP</a>
+            </div>
+          </div>
+
+          <div id="forms" class="forms">
+            <form class="card form" id="registrationForm">
+              <h3 class="card-title">Registration</h3>
+              <div class="field">
+                <label for="regName">Full name</label>
+                <input id="regName" name="name" autocomplete="name" required placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="regEmail">Email</label>
+                <input id="regEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="regRole">Role</label>
+                <select id="regRole" name="role" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Student</option>
+                  <option>Professional</option>
+                  <option>Hobbyist</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="actions">
+                <button class="btn btn-black" type="submit">Register</button>
+                <button class="btn btn-white" type="reset">Clear</button>
+              </div>
+              <p class="muted small">Stored locally in your browser.</p>
+            </form>
+
+            <form class="card form" id="submissionForm">
+              <h3 class="card-title">Submission</h3>
+              <div class="field">
+                <label for="subTeam">Team / participant</label>
+                <input id="subTeam" name="team" required placeholder="Team Echo / Your name" />
+              </div>
+              <div class="field">
+                <label for="subTitle">Title</label>
+                <input id="subTitle" name="title" required placeholder="UX solution for X" />
+              </div>
+              <div class="field">
+                <label for="subLink">Prototype link</label>
+                <input id="subLink" name="link" type="url" required placeholder="https://figma.com/..." />
+              </div>
+              <div class="field">
+                <label for="subSummary">Summary</label>
+                <textarea id="subSummary" name="summary" rows="4" required placeholder="Problem → approach → impact"></textarea>
+              </div>
+              <div class="actions">
+                <button class="btn btn-black" type="submit">Save submission</button>
+                <button class="btn btn-white" type="reset">Clear</button>
+              </div>
+              <p class="muted small">Stored locally in your browser.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section why">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Why participate?</h2>
+            <p class="section-sub">Fast-paced learning, networking, and real-world problem solving.</p>
+          </div>
+
+          <div class="why-cards" role="list">
+            <article class="why-card" role="listitem">
+              <div class="why-kicker">Win cash prizes of up to</div>
+              <div class="why-big">₹ 3,00,000</div>
+              <p class="muted">Collaborate, compete, and conquer—take home prizes and goodies.</p>
+            </article>
+            <article class="why-card" role="listitem">
+              <div class="why-kicker">Collaborate & network with</div>
+              <div class="why-big">Budding designers</div>
+              <p class="muted">Meet creative people, team up, and build your design circle.</p>
+            </article>
+            <article class="why-card" role="listitem">
+              <div class="why-kicker">Get mentored by top</div>
+              <div class="why-big">Industry pioneers</div>
+              <p class="muted">Ask questions, get feedback, and grow quickly with guidance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="section event">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Event details</h2>
+            <p class="section-sub">Everything you need to know at a glance.</p>
+          </div>
+
+          <div class="details">
+            <article class="detail">
+              <div class="detail-no">01</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Registration process</h3>
+                <p class="muted">Limited seats. Apply now and watch your inbox for a confirmation email.</p>
+              </div>
+            </article>
+            <article class="detail">
+              <div class="detail-no">02</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Date and time</h3>
+                <p class="muted">Two-day sprint. Set the kickoff time in the countdown (editable).</p>
+              </div>
+            </article>
+            <article class="detail">
+              <div class="detail-no">03</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Pricing</h3>
+                <p class="muted">Update pricing based on your official plan (free / paid / audience pass).</p>
+              </div>
+            </article>
+            <article class="detail">
+              <div class="detail-no">04</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Location</h3>
+                <p class="muted">In-house / online / hybrid — update based on your event format.</p>
+              </div>
+            </article>
+            <article class="detail">
+              <div class="detail-no">05</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Team allocation</h3>
+                <p class="muted">Solo sign-up, team allocation on the day (optional). Update to your rules.</p>
+              </div>
+            </article>
+            <article class="detail">
+              <div class="detail-no">06</div>
+              <div class="detail-body">
+                <h3 class="detail-title">Awards</h3>
+                <p class="muted">Award ceremony after final presentations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="section rules">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Rules and regulations</h2>
+            <p class="section-sub">Download the rulebook and read the key points.</p>
+          </div>
+
+          <div class="rules-download">
+            <div>
+              <div class="rules-title">Rules & regulations to get you started</div>
+              <p class="muted">Add your PDF in <code>assets/</code> and link it to the button.</p>
+            </div>
+            <a class="btn btn-black" href="#" aria-disabled="true">Download PDF</a>
+          </div>
+
+          <div class="faq" role="region" aria-label="Rules">
+            <details class="qa" open>
+              <summary>Eligibility & team size</summary>
+              <div class="qa-body">
+                <p class="muted">Open to everyone; solo or teams up to 4. One submission per team.</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Submission format</summary>
+              <div class="qa-body">
+                <p class="muted">Prototype link + short write-up (problem → solution → impact).</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Original work</summary>
+              <div class="qa-body">
+                <p class="muted">Use licensed assets and cite sources. No plagiarism.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="jury" class="section jury">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Jury</h2>
+            <p class="section-sub">Replace placeholders with real jury information.</p>
+          </div>
+
+          <div class="people" role="list">
+            <article class="person" role="listitem">
+              <div class="avatar" aria-hidden="true">L</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">VP, Design</div>
+                <p class="muted">“Excited to meet and mentor participants.”</p>
+              </div>
+            </article>
+            <article class="person" role="listitem">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">Leading Design</div>
+                <p class="muted">“Clarity, craft, and storytelling win.”</p>
+              </div>
+            </article>
+            <article class="person" role="listitem">
+              <div class="avatar" aria-hidden="true">U</div>
+              <div>
+                <div class="person-name">Jury Member</div>
+                <div class="person-role">Experience Lead</div>
+                <p class="muted">“Make complex things feel effortless.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="section partners">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Sponsors & partners</h2>
+            <p class="section-sub">Placeholders—swap for real logos.</p>
+          </div>
+
+          <div class="logos">
+            <div class="logo-card">Platinum Sponsor</div>
+            <div class="logo-card">Food Partner</div>
+            <div class="logo-card">Community Partner</div>
+            <div class="logo-card">Tool Partner</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faqs">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">When in doubt, always ask</h2>
+            <p class="section-sub">Common questions (edit to match your policies).</p>
+          </div>
+
+          <div class="faq" role="region" aria-label="FAQs">
+            <details class="qa" open>
+              <summary>Is this an online or in-house event?</summary>
+              <div class="qa-body">
+                <p class="muted">Update based on your official format (online, in-house, or hybrid).</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Who’s eligible to participate?</summary>
+              <div class="qa-body">
+                <p class="muted">Define eligibility (students, early-career, open to all, etc.).</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Do we have to pay to participate?</summary>
+              <div class="qa-body">
+                <p class="muted">Add pricing details (if any), or keep it free.</p>
+              </div>
+            </details>
+            <details class="qa">
+              <summary>Are we allowed to form our own teams?</summary>
+              <div class="qa-body">
+                <p class="muted">Clarify solo vs team sign-ups and maximum team size.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-sub">Update these with official organizer channels.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="card">
+              <div class="card-title">Organizers</div>
+              <p class="muted"><strong>Email:</strong> hello@echologyx.example</p>
+              <p class="muted"><strong>Discord:</strong> EchoLogyX Community</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Downloads</div>
+              <p class="muted">Put your PDF rulebook at <code>assets/EchoLogyX-Rulebook.pdf</code>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> EchoLogyX</p>
+        <a class="muted" href="./index.html">Back to main version</a>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="v2DateModal" aria-label="Edit event date and time">
+      <form method="dialog" class="modal-card" id="v2DateForm">
+        <div class="modal-head">
+          <h2 class="modal-title">Set hackathon start time</h2>
+          <button class="icon-btn" value="cancel" aria-label="Close">✕</button>
+        </div>
+
+        <div class="field">
+          <label for="v2EventDateTime">Start date/time</label>
+          <input id="v2EventDateTime" name="eventDateTime" type="datetime-local" required />
+          <p class="muted small">Stored locally on this device.</p>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-black" id="v2SaveDateBtn" value="confirm">Save</button>
+          <button class="btn btn-white" value="cancel">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="./script.js"></script>
+    <script>
+      // Variation 2 hooks: reuse existing script.js logic by mapping IDs.
+      // We keep localStorage keys the same so both pages share data in demo mode.
+      (function () {
+        const editBtn = document.getElementById("v2EditDateBtn");
+        const modal = document.getElementById("v2DateModal");
+        const input = document.getElementById("v2EventDateTime");
+        const label = document.getElementById("v2EventDate");
+        const happening = document.getElementById("v2HappeningOn");
+        const year = document.getElementById("year");
+
+        const getISO = () => localStorage.getItem("echologyx:eventStartISO") || "2026-06-20T10:00:00";
+        const setISO = (iso) => localStorage.setItem("echologyx:eventStartISO", iso);
+        const parse = (iso) => {
+          const d = new Date(iso);
+          return Number.isNaN(d.getTime()) ? null : d;
+        };
+        const toLocal = (d) => {
+          const pad = (n) => String(n).padStart(2, "0");
+          return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+        };
+        const fmtYMD = (d) => {
+          const pad = (n) => String(n).padStart(2, "0");
+          return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+        };
+
+        const updateLabel = () => {
+          const d = parse(getISO());
+          if (label) label.textContent = d ? fmtYMD(d) : "—";
+          if (happening && d) happening.textContent = d.toLocaleDateString(undefined, { day: "2-digit", month: "short" });
+        };
+
+        const renderCountdown = () => {
+          const start = parse(getISO());
+          if (!start) return;
+          const now = new Date();
+          let diff = start.getTime() - now.getTime();
+          if (diff < 0) diff = 0;
+          const totalSeconds = Math.floor(diff / 1000);
+          const days = Math.floor(totalSeconds / (24 * 3600));
+          const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+          const minutes = Math.floor((totalSeconds % 3600) / 60);
+          const seconds = totalSeconds % 60;
+          const set = (part, value) => {
+            const el = document.querySelector(`[data-part="${part}"]`);
+            if (el) el.textContent = String(value).padStart(2, "0");
+          };
+          set("days", days);
+          set("hours", hours);
+          set("minutes", minutes);
+          set("seconds", seconds);
+        };
+
+        if (year) year.textContent = String(new Date().getFullYear());
+
+        if (editBtn && modal && input) {
+          editBtn.addEventListener("click", () => {
+            const d = parse(getISO()) || new Date();
+            input.value = toLocal(d);
+            modal.showModal();
+          });
+          modal.addEventListener("close", () => {
+            if (modal.returnValue !== "confirm") return;
+            if (!input.value) return;
+            setISO(input.value);
+            updateLabel();
+            renderCountdown();
+          });
+        }
+
+        // Mobile nav
+        const toggle = document.querySelector(".nav-toggle");
+        const mobile = document.getElementById("mobileNav");
+        if (toggle && mobile) {
+          const setOpen = (open) => {
+            toggle.setAttribute("aria-expanded", String(open));
+            mobile.classList.toggle("open", open);
+          };
+          toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+          mobile.addEventListener("click", (e) => {
+            const a = e.target.closest("a");
+            if (a) setOpen(false);
+          });
+        }
+
+        updateLabel();
+        renderCountdown();
+        window.setInterval(renderCountdown, 250);
+      })();
+    </script>
+  </body>
+</html>
+
+
+
+
+

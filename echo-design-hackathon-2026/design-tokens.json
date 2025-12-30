@@ -1,0 +1,420 @@
+{
+  "$schema": "https://schemas.figma.com/tokens/v1",
+  "colors": {
+    "bg": {
+      "value": "#050507",
+      "type": "color",
+      "description": "Primary background color"
+    },
+    "ink": {
+      "value": "#0b0b10",
+      "type": "color",
+      "description": "Dark ink color for contrast"
+    },
+    "paper": {
+      "value": "#f6f3ef",
+      "type": "color",
+      "description": "Light paper color (not used in dark theme)"
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color",
+      "description": "Pure white"
+    },
+    "muted": {
+      "value": "rgba(255, 255, 255, 0.72)",
+      "type": "color",
+      "description": "Muted text color (72% opacity white)"
+    },
+    "muted2": {
+      "value": "rgba(255, 255, 255, 0.6)",
+      "type": "color",
+      "description": "Secondary muted text (60% opacity white)"
+    },
+    "line": {
+      "value": "rgba(255, 255, 255, 0.14)",
+      "type": "color",
+      "description": "Border/line color (14% opacity white)"
+    },
+    "line2": {
+      "value": "rgba(255, 255, 255, 0.22)",
+      "type": "color",
+      "description": "Secondary border color (22% opacity white)"
+    },
+    "violet": {
+      "value": "#6f3bff",
+      "type": "color",
+      "description": "Primary accent color - violet"
+    },
+    "aqua": {
+      "value": "#24ffd1",
+      "type": "color",
+      "description": "Secondary accent color - aqua/cyan"
+    },
+    "magenta": {
+      "value": "#ff4dff",
+      "type": "color",
+      "description": "Tertiary accent color - magenta"
+    }
+  },
+  "spacing": {
+    "container": {
+      "value": "1120px",
+      "type": "dimension",
+      "description": "Maximum container width"
+    },
+    "containerPadding": {
+      "value": "18px",
+      "type": "dimension",
+      "description": "Horizontal padding for container"
+    },
+    "sectionPadding": {
+      "value": "48px",
+      "type": "dimension",
+      "description": "Vertical padding for sections"
+    },
+    "gapSmall": {
+      "value": "6px",
+      "type": "dimension",
+      "description": "Small gap between elements"
+    },
+    "gapMedium": {
+      "value": "10px",
+      "type": "dimension",
+      "description": "Medium gap between elements"
+    },
+    "gapLarge": {
+      "value": "14px",
+      "type": "dimension",
+      "description": "Large gap between elements"
+    },
+    "gapXLarge": {
+      "value": "24px",
+      "type": "dimension",
+      "description": "Extra large gap"
+    }
+  },
+  "borderRadius": {
+    "small": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "Small border radius"
+    },
+    "medium": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "Medium border radius"
+    },
+    "large": {
+      "value": "22px",
+      "type": "dimension",
+      "description": "Large border radius (primary)"
+    },
+    "round": {
+      "value": "999px",
+      "type": "dimension",
+      "description": "Fully rounded (pill shape)"
+    }
+  },
+  "shadows": {
+    "primary": {
+      "value": "0 18px 0 rgba(0, 0, 0, 0.55)",
+      "type": "shadow",
+      "description": "Primary shadow (offset Y, no blur, black 55% opacity)"
+    },
+    "secondary": {
+      "value": "0 26px 70px rgba(0, 0, 0, 0.55)",
+      "type": "shadow",
+      "description": "Secondary shadow (offset Y, blur, black 55% opacity)"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+        "type": "fontFamily",
+        "description": "Primary font family"
+      },
+      "display": {
+        "value": "Anton, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+        "type": "fontFamily",
+        "description": "Display font family (headings)"
+      },
+      "mono": {
+        "value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+        "type": "fontFamily",
+        "description": "Monospace font family"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "0.72rem",
+        "type": "dimension",
+        "description": "Extra small text (11.52px at 16px base)"
+      },
+      "sm": {
+        "value": "0.78rem",
+        "type": "dimension",
+        "description": "Small text (12.48px)"
+      },
+      "base": {
+        "value": "1rem",
+        "type": "dimension",
+        "description": "Base text size (16px)"
+      },
+      "lg": {
+        "value": "1.1rem",
+        "type": "dimension",
+        "description": "Large text (17.6px)"
+      },
+      "xl": {
+        "value": "1.3rem",
+        "type": "dimension",
+        "description": "Extra large text (20.8px)"
+      },
+      "2xl": {
+        "value": "2rem",
+        "type": "dimension",
+        "description": "2XL text (32px)"
+      },
+      "3xl": {
+        "value": "2.2rem",
+        "type": "dimension",
+        "description": "3XL text (35.2px)"
+      },
+      "4xl": {
+        "value": "2.4rem",
+        "type": "dimension",
+        "description": "4XL text (38.4px)"
+      },
+      "hero": {
+        "value": "clamp(2.3rem, 4.4vw, 4.3rem)",
+        "type": "dimension",
+        "description": "Hero title (responsive, 36.8px - 68.8px)"
+      }
+    },
+    "fontWeight": {
+      "normal": {
+        "value": "400",
+        "type": "number",
+        "description": "Normal weight"
+      },
+      "medium": {
+        "value": "500",
+        "type": "number",
+        "description": "Medium weight"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "number",
+        "description": "Semibold weight"
+      },
+      "bold": {
+        "value": "700",
+        "type": "number",
+        "description": "Bold weight"
+      },
+      "extrabold": {
+        "value": "800",
+        "type": "number",
+        "description": "Extra bold weight"
+      },
+      "black": {
+        "value": "900",
+        "type": "number",
+        "description": "Black weight (heaviest)"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "0.92",
+        "type": "number",
+        "description": "Tight line height (hero titles)"
+      },
+      "normal": {
+        "value": "1.1",
+        "type": "number",
+        "description": "Normal line height"
+      },
+      "relaxed": {
+        "value": "1.5",
+        "type": "number",
+        "description": "Relaxed line height (body text)"
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "value": "-0.02em",
+        "type": "dimension",
+        "description": "Tight letter spacing"
+      },
+      "normal": {
+        "value": "0.02em",
+        "type": "dimension",
+        "description": "Normal letter spacing"
+      },
+      "wide": {
+        "value": "0.04em",
+        "type": "dimension",
+        "description": "Wide letter spacing"
+      },
+      "wider": {
+        "value": "0.06em",
+        "type": "dimension",
+        "description": "Wider letter spacing"
+      },
+      "widest": {
+        "value": "0.08em",
+        "type": "dimension",
+        "description": "Widest letter spacing (uppercase text)"
+      },
+      "extraWide": {
+        "value": "0.12em",
+        "type": "dimension",
+        "description": "Extra wide letter spacing"
+      }
+    }
+  },
+  "borders": {
+    "width": {
+      "thin": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Thin border"
+      },
+      "medium": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Medium border (primary)"
+      }
+    },
+    "style": {
+      "solid": {
+        "value": "solid",
+        "type": "strokeStyle",
+        "description": "Solid border style"
+      },
+      "dashed": {
+        "value": "dashed",
+        "type": "strokeStyle",
+        "description": "Dashed border style"
+      }
+    }
+  },
+  "gradients": {
+    "background": {
+      "primary": {
+        "value": "radial-gradient(900px 600px at 15% 10%, rgba(111, 59, 255, 0.45), transparent 60%), radial-gradient(900px 600px at 90% 15%, rgba(36, 255, 209, 0.22), transparent 60%), radial-gradient(900px 600px at 70% 90%, rgba(255, 77, 255, 0.12), transparent 55%), #050507",
+        "type": "gradient",
+        "description": "Main background gradient"
+      },
+      "cardAccent": {
+        "value": "linear-gradient(135deg, rgba(111, 59, 255, 0.2), rgba(36, 255, 209, 0.1))",
+        "type": "gradient",
+        "description": "Accent card gradient"
+      },
+      "logo": {
+        "value": "linear-gradient(135deg, rgba(111, 59, 255, 0.95), rgba(36, 255, 209, 0.85))",
+        "type": "gradient",
+        "description": "Logo gradient"
+      },
+      "separator": {
+        "value": "linear-gradient(180deg, rgba(36, 255, 209, 0.8), rgba(111, 59, 255, 0.8))",
+        "type": "gradient",
+        "description": "Countdown separator gradient"
+      }
+    }
+  },
+  "effects": {
+    "backdropBlur": {
+      "value": "14px",
+      "type": "dimension",
+      "description": "Backdrop blur for sticky header"
+    },
+    "textShadow": {
+      "primary": {
+        "value": "0 3px 0 rgba(0, 0, 0, 0.65)",
+        "type": "shadow",
+        "description": "Text shadow for display text"
+      },
+      "secondary": {
+        "value": "0 2px 0 rgba(0, 0, 0, 0.65)",
+        "type": "shadow",
+        "description": "Text shadow for ticker text"
+      }
+    },
+    "grain": {
+      "opacity": {
+        "value": "0.14",
+        "type": "number",
+        "description": "Grain overlay opacity"
+      },
+      "pattern": {
+        "value": "repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 3px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0, rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 4px)",
+        "type": "string",
+        "description": "Grain pattern overlay"
+      }
+    }
+  },
+  "breakpoints": {
+    "mobile": {
+      "value": "980px",
+      "type": "dimension",
+      "description": "Mobile breakpoint (max-width)"
+    }
+  },
+  "components": {
+    "card": {
+      "padding": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Card padding"
+      },
+      "borderRadius": {
+        "value": "22px",
+        "type": "dimension",
+        "description": "Card border radius"
+      },
+      "borderWidth": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Card border width"
+      }
+    },
+    "button": {
+      "padding": {
+        "value": "11px 14px",
+        "type": "dimension",
+        "description": "Button padding"
+      },
+      "borderRadius": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Button border radius"
+      },
+      "borderWidth": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Button border width"
+      }
+    },
+    "input": {
+      "padding": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "Input padding"
+      },
+      "borderRadius": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Input border radius"
+      },
+      "borderWidth": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Input border width"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EchoLogyX Design Hackathon 2026 — register, submit tasks, track the countdown, and review rules, criteria, prizes, and panel." />
+    <title>EchoLogyX Design Hackathon 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="theme-collage">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="EchoLogyX Design Hackathon 2026">
+          <span class="brand-mark" aria-hidden="true">EX</span>
+          <span class="brand-text">
+            <span class="brand-title">EchoLogyX</span>
+            <span class="brand-subtitle">Design Hackathon 2026</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary">
+          <a href="#apply">Apply</a>
+          <a href="#why">Why participate</a>
+          <a href="#event">Event details</a>
+          <a href="#rules">Rules</a>
+          <a href="#jury">Jury</a>
+          <a href="#partners">Partners</a>
+          <a href="#faq">FAQs</a>
+          <a class="nav-cta" href="#apply">Apply now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="badge">
+              <span aria-hidden="true">●</span> Live event portal
+            </p>
+            <h1>
+              Skills you should have learned in school:
+              <span class="accent-outline">EchoLogyX Design Hackathon 2026</span>
+            </h1>
+            <p class="lead">
+              Register, submit your task, track the countdown, and review the rulebook, evaluation criteria, prizes,
+              and judging panel—everything in one place.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#register">Register</a>
+              <a class="btn btn-secondary" href="#rules">Read Rulebook</a>
+            </div>
+
+            <div class="hero-stats" role="list" aria-label="Event highlights">
+              <div class="stat" role="listitem">
+                <div class="stat-value" id="eventDateLabel">2026-06-20</div>
+                <div class="stat-label">Event date (editable)</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">48h</div>
+                <div class="stat-label">Sprint window</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat-value">Design + UX</div>
+                <div class="stat-label">Focus</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Countdown and quick links">
+            <div class="card">
+              <div class="card-head">
+                <h2 class="card-title">Countdown</h2>
+                <button class="chip" type="button" id="editDateBtn" aria-describedby="dateHelp">
+                  Edit date/time
+                </button>
+              </div>
+              <p class="muted" id="dateHelp">Set the hackathon start time and the timer updates instantly.</p>
+
+              <div class="countdown" id="countdown" aria-live="polite">
+                <div class="time">
+                  <div class="time-value" data-part="days">--</div>
+                  <div class="time-label">Days</div>
+                </div>
+                <div class="time">
+                  <div class="time-value" data-part="hours">--</div>
+                  <div class="time-label">Hours</div>
+                </div>
+                <div class="time">
+                  <div class="time-value" data-part="minutes">--</div>
+                  <div class="time-label">Minutes</div>
+                </div>
+                <div class="time">
+                  <div class="time-value" data-part="seconds">--</div>
+                  <div class="time-label">Seconds</div>
+                </div>
+              </div>
+
+              <div class="divider" role="separator" aria-hidden="true"></div>
+
+              <div class="quick-links">
+                <a class="link-card" href="#submit">
+                  <span class="link-card-title">Submit your task</span>
+                  <span class="link-card-sub">Upload link + description</span>
+                </a>
+                <a class="link-card" href="#criteria">
+                  <span class="link-card-title">Evaluation criteria</span>
+                  <span class="link-card-sub">How judging works</span>
+                </a>
+                <a class="link-card" href="#prizes">
+                  <span class="link-card-title">Prizes</span>
+                  <span class="link-card-sub">Awards & perks</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="card subtle">
+              <h3 class="card-title">Venue / Online</h3>
+              <p class="muted">
+                This template supports both formats—update the details below in the “Event details” section.
+              </p>
+              <a class="btn btn-tertiary" href="#details">Event details</a>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>REGISTER</span>
+            <span>SUBMIT</span>
+            <span>COUNTDOWN</span>
+            <span>RULEBOOK</span>
+            <span>CRITERIA</span>
+            <span>PRIZES</span>
+            <span>PANEL</span>
+            <span>REGISTER</span>
+            <span>SUBMIT</span>
+            <span>COUNTDOWN</span>
+            <span>RULEBOOK</span>
+            <span>CRITERIA</span>
+            <span>PRIZES</span>
+            <span>PANEL</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Apply right away!</h2>
+            <p class="muted">
+              Register now and submit your task when ready. (This demo stores entries locally in your browser.)
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <div class="card price">
+              <div class="price-top">
+                <div class="price-tag">Early Bird</div>
+                <div class="price-amount">Free</div>
+              </div>
+              <p class="muted">Register early and secure your slot.</p>
+              <a class="btn btn-primary" href="#register">Register</a>
+            </div>
+            <div class="card price">
+              <div class="price-top">
+                <div class="price-tag">Regular</div>
+                <div class="price-amount">Free</div>
+              </div>
+              <p class="muted">Regular registration (until filled).</p>
+              <a class="btn btn-secondary" href="#register">Apply</a>
+            </div>
+            <div class="card price">
+              <div class="price-top">
+                <div class="price-tag">Audience</div>
+                <div class="price-amount">Free</div>
+              </div>
+              <p class="muted">Want to attend as audience? RSVP here.</p>
+              <a class="btn btn-tertiary" href="#contact">RSVP</a>
+            </div>
+          </div>
+
+          <div class="split">
+            <form class="card form" id="registrationForm">
+              <div class="form-head">
+                <h3 class="card-title">Registration</h3>
+                <p class="muted">Submit your registration now.</p>
+              </div>
+              <div class="field">
+                <label for="regName">Full name</label>
+                <input id="regName" name="name" autocomplete="name" required placeholder="Your name" />
+              </div>
+
+              <div class="field">
+                <label for="regEmail">Email</label>
+                <input id="regEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+
+              <div class="field">
+                <label for="regRole">Role</label>
+                <select id="regRole" name="role" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Student</option>
+                  <option>Professional</option>
+                  <option>Hobbyist</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="regTeam">Team name (optional)</label>
+                <input id="regTeam" name="team" autocomplete="organization" placeholder="Team Echo" />
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Register</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+              </div>
+            </form>
+
+            <form class="card form" id="submissionForm">
+              <div class="form-head">
+                <h3 class="card-title">Task submission</h3>
+                <p class="muted">Paste your prototype link + summary.</p>
+              </div>
+              <div class="field">
+                <label for="subTeam">Team / participant name</label>
+                <input id="subTeam" name="team" required placeholder="Team Echo / Your name" />
+              </div>
+
+              <div class="field">
+                <label for="subTitle">Submission title</label>
+                <input id="subTitle" name="title" required placeholder="Redesigning onboarding for clarity" />
+              </div>
+
+              <div class="field">
+                <label for="subLink">Prototype link</label>
+                <input id="subLink" name="link" type="url" required placeholder="https://figma.com/..." />
+              </div>
+
+              <div class="field">
+                <label for="subCategory">Category</label>
+                <select id="subCategory" name="category" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>UX / Product Design</option>
+                  <option>UI Design</option>
+                  <option>Service / Systems</option>
+                  <option>Accessibility</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="subSummary">Summary</label>
+                <textarea
+                  id="subSummary"
+                  name="summary"
+                  rows="5"
+                  required
+                  placeholder="Problem → approach → key screens → why it matters…"
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Save submission</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Registered (local)</h3>
+              <p class="muted">Saved in <code>localStorage</code> on this device.</p>
+              <div class="table-wrap" role="region" aria-label="Registered participants list">
+                <table class="table" aria-describedby="regTableHelp">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Role</th>
+                    </tr>
+                  </thead>
+                  <tbody id="registrantsTbody"></tbody>
+                </table>
+              </div>
+              <p id="regTableHelp" class="muted">Tip: clear your browser storage to reset this list.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Submissions (local)</h3>
+              <p class="muted">Saved submissions will appear here.</p>
+              <div id="submissionsList" class="stack" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Why participate?</h2>
+            <p class="muted">Meet fellow creatives, learn fast, and ship something real—quickly.</p>
+          </div>
+
+          <div class="why-grid">
+            <div class="card why-card">
+              <h3 class="card-title">Win prizes & recognition</h3>
+              <p class="muted">Compete, collaborate, and earn awards + spotlight features.</p>
+            </div>
+            <div class="card why-card">
+              <h3 class="card-title">Collaborate & network</h3>
+              <p class="muted">Meet designers, build your circle, and learn by doing.</p>
+            </div>
+            <div class="card why-card">
+              <h3 class="card-title">Mentorship from pros</h3>
+              <p class="muted">Get feedback from experienced designers and improve fast.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Event details</h2>
+            <p class="muted">Short, numbered details (easy to scan).</p>
+          </div>
+
+          <div class="detail-list">
+            <article class="detail card">
+              <div class="detail-no">01</div>
+              <div>
+                <h3 class="card-title">Registration process</h3>
+                <p class="muted">
+                  Limited seats. Apply now and watch your inbox for a confirmation message.
+                </p>
+              </div>
+            </article>
+            <article class="detail card">
+              <div class="detail-no">02</div>
+              <div>
+                <h3 class="card-title">Date & time</h3>
+                <p class="muted">Kickoff at the selected time in the countdown (editable). Typical sprint window: 24–48 hours.</p>
+              </div>
+            </article>
+            <article class="detail card">
+              <div class="detail-no">03</div>
+              <div>
+                <h3 class="card-title">Location</h3>
+                <p class="muted">Online / in-house — update this based on your official plan.</p>
+              </div>
+            </article>
+            <article class="detail card">
+              <div class="detail-no">04</div>
+              <div>
+                <h3 class="card-title">Team allocation</h3>
+                <p class="muted">Solo or teams up to 4. Organizers may assign teams depending on format.</p>
+              </div>
+            </article>
+            <article class="detail card">
+              <div class="detail-no">05</div>
+              <div>
+                <h3 class="card-title">Awards</h3>
+                <p class="muted">Awards announced after final presentations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="phases" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Phases</h2>
+            <p class="muted">Step-by-step stages and expectations.</p>
+          </div>
+
+          <div class="stepper" role="list" aria-label="Hackathon phases stepper">
+            <article class="step card" role="listitem">
+              <div class="step-top">
+                <div class="step-badge">1</div>
+                <div>
+                  <h3 class="card-title">Screening</h3>
+                  <p class="muted">Short UX task submission</p>
+                </div>
+              </div>
+              <div class="step-meta">
+                <span class="pill">Duration: 3–7 days</span>
+              </div>
+            </article>
+
+            <article class="step card" role="listitem">
+              <div class="step-top">
+                <div class="step-badge">2</div>
+                <div>
+                  <h3 class="card-title">Main Challenge</h3>
+                  <p class="muted">Full UX solution + prototype</p>
+                </div>
+              </div>
+              <div class="step-meta">
+                <span class="pill">Duration: 24–48 hours</span>
+              </div>
+            </article>
+
+            <article class="step card" role="listitem">
+              <div class="step-top">
+                <div class="step-badge">3</div>
+                <div>
+                  <h3 class="card-title">Finals</h3>
+                  <p class="muted">Strategic UX concept + live presentation</p>
+                </div>
+              </div>
+              <div class="step-meta">
+                <span class="pill">Duration: 1–2 days</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="timer" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Clock timer</h2>
+            <p class="muted">A live clock plus a focus timer for teams (optional).</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="card">
+              <h3 class="card-title">Local time</h3>
+              <p class="big" id="liveClock">--:--:--</p>
+              <p class="muted" id="liveClockMeta">--</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Focus timer</h3>
+              <p class="big" id="focusTimer">25:00</p>
+              <div class="inline-actions">
+                <button class="btn btn-tertiary" type="button" id="focusStartBtn">Start</button>
+                <button class="btn btn-tertiary" type="button" id="focusPauseBtn">Pause</button>
+                <button class="btn btn-tertiary" type="button" id="focusResetBtn">Reset</button>
+              </div>
+              <p class="muted">Default is 25 minutes. You can tweak it in <code>script.js</code>.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Quick checklist</h3>
+              <ul class="list">
+                <li>Confirm your problem statement</li>
+                <li>Sketch flow → screens</li>
+                <li>Run a quick usability check</li>
+                <li>Polish & submit before deadline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Rules and regulations</h2>
+            <p class="muted">Everything you need to get started. Replace with your official rules.</p>
+          </div>
+
+          <div class="rules-cta card">
+            <div>
+              <h3 class="card-title">Download rulebook</h3>
+              <p class="muted">Add your PDF to <code>echo-design-hackathon-2026/assets/</code> and link it here.</p>
+            </div>
+            <a class="btn btn-primary" href="#" aria-disabled="true">Download PDF</a>
+          </div>
+
+          <div class="accordion" role="region" aria-label="Rulebook">
+            <details class="acc-item" open>
+              <summary>Eligibility & team size</summary>
+              <div class="acc-body">
+                <ul class="list">
+                  <li>Open to everyone (students and professionals).</li>
+                  <li>Solo or teams up to 4 members.</li>
+                  <li>One submission per team.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>What you can submit</summary>
+              <div class="acc-body">
+                <ul class="list">
+                  <li>Figma prototype or equivalent interactive link.</li>
+                  <li>A short summary of your approach and decisions.</li>
+                  <li>Optional: research notes, test results, or a short demo video.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Original work & assets</summary>
+              <div class="acc-body">
+                <ul class="list">
+                  <li>Use your own work or properly licensed assets.</li>
+                  <li>Cite icon packs, illustrations, and fonts where applicable.</li>
+                  <li>No plagiarism—violations lead to disqualification.</li>
+                </ul>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Code of conduct</summary>
+              <div class="acc-body">
+                <p class="muted">
+                  Be respectful. No harassment, hate speech, or discrimination. Organizers may remove participants who
+                  violate this policy.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div class="callout">
+            <div class="callout-inner">
+              <div>
+                <h3 class="callout-title">Need a printable rulebook?</h3>
+                <p class="muted">I can generate a PDF-ready page, or link to a hosted rulebook file.</p>
+              </div>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jury" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Designathon jury</h2>
+            <p class="muted">Add real names, roles, and bios when ready.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card person person-bio">
+              <div class="avatar" aria-hidden="true">L</div>
+              <div>
+                <h3 class="card-title">Jury Member</h3>
+                <p class="muted">VP / Head of Design</p>
+                <p class="quote">“I’m excited to mentor participants and see bold, thoughtful work.”</p>
+              </div>
+            </article>
+            <article class="card person person-bio">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div>
+                <h3 class="card-title">Jury Member</h3>
+                <p class="muted">Design Lead</p>
+                <p class="quote">“Show your process—clarity beats perfection.”</p>
+              </div>
+            </article>
+            <article class="card person person-bio">
+              <div class="avatar" aria-hidden="true">U</div>
+              <div>
+                <h3 class="card-title">Jury Member</h3>
+                <p class="muted">Digital Experience Lead</p>
+                <p class="quote">“Make complex things feel effortless.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">Sponsors & partners</h2>
+            <p class="muted">Drop your sponsor logos here (placeholders for now).</p>
+          </div>
+
+          <div class="logo-wall">
+            <div class="logo-card card">Platinum Sponsor</div>
+            <div class="logo-card card">Food Partner</div>
+            <div class="logo-card card">Community Partner</div>
+            <div class="logo-card card">Tool Partner</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="decor-title">When in doubt, always ask</h2>
+            <p class="muted">Quick answers for common questions.</p>
+          </div>
+
+          <div class="accordion" role="region" aria-label="FAQs">
+            <details class="acc-item" open>
+              <summary>Is this an online or in-house event?</summary>
+              <div class="acc-body">
+                <p class="muted">Update this based on your official format (online, in-house, or hybrid).</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Who’s eligible to participate?</summary>
+              <div class="acc-body">
+                <p class="muted">Define eligibility (students, early-career, open to all, etc.).</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Do we have to pay to participate?</summary>
+              <div class="acc-body">
+                <p class="muted">Add pricing details (if any), or keep it free.</p>
+              </div>
+            </details>
+            <details class="acc-item">
+              <summary>Are we allowed to form our own teams?</summary>
+              <div class="acc-body">
+                <p class="muted">Clarify solo vs team sign-ups and maximum team size.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="criteria" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Evaluation criteria</h2>
+            <p class="muted">Transparent judging guidelines. Update weights as needed.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Score breakdown (example)</h3>
+              <ul class="list">
+                <li><strong>Problem clarity:</strong> 20%</li>
+                <li><strong>Usability & flows:</strong> 25%</li>
+                <li><strong>Visual design system:</strong> 20%</li>
+                <li><strong>Accessibility:</strong> 15%</li>
+                <li><strong>Innovation & impact:</strong> 20%</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card-title">What judges look for</h3>
+              <ul class="list">
+                <li>Clear user journey with minimal friction</li>
+                <li>Consistent typography, spacing, and components</li>
+                <li>Readable contrast and accessible interactions</li>
+                <li>Reasoned tradeoffs (what you chose and why)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prizes" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Prizes</h2>
+            <p class="muted">Replace with your official prize list and sponsors.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="card prize gold">
+              <h3 class="card-title">Champion</h3>
+              <p class="big">$1,000</p>
+              <p class="muted">+ certificate + spotlight feature</p>
+            </div>
+            <div class="card prize silver">
+              <h3 class="card-title">Runner-up</h3>
+              <p class="big">$500</p>
+              <p class="muted">+ certificate + mentorship session</p>
+            </div>
+            <div class="card prize bronze">
+              <h3 class="card-title">People’s Choice</h3>
+              <p class="big">$250</p>
+              <p class="muted">+ community badge</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="panel" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Judging panel</h2>
+            <p class="muted">Add real names, headshots, and roles when ready.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card person">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div>
+                <h3 class="card-title">Amina Rahman</h3>
+                <p class="muted">Product Designer • Accessibility</p>
+              </div>
+            </article>
+            <article class="card person">
+              <div class="avatar" aria-hidden="true">J</div>
+              <div>
+                <h3 class="card-title">Jasper Chen</h3>
+                <p class="muted">Design Lead • Systems Thinking</p>
+              </div>
+            </article>
+            <article class="card person">
+              <div class="avatar" aria-hidden="true">S</div>
+              <div>
+                <h3 class="card-title">Sara Ahmed</h3>
+                <p class="muted">UX Researcher • Behavioral Insights</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="muted">Update these details for your official organizers.</p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Organizers</h3>
+              <ul class="list">
+                <li><strong>Email:</strong> hello@echologyx.example</li>
+                <li><strong>Discord:</strong> EchoLogyX Community</li>
+                <li><strong>Instagram:</strong> @echologyx</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Downloads</h3>
+              <p class="muted">
+                If you have a PDF rulebook or evaluation sheet, link it here. Example:
+                <code>assets/EchoLogyX-Rulebook.pdf</code>
+              </p>
+              <a class="btn btn-tertiary" href="#rules">Go to rulebook</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> EchoLogyX. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="#register">Register</a>
+          <a href="#submit">Submit</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="dateModal" aria-label="Edit event date and time">
+      <form method="dialog" class="modal-card" id="dateForm">
+        <div class="modal-head">
+          <h2 class="modal-title">Set hackathon start time</h2>
+          <button class="icon-btn" value="cancel" aria-label="Close">✕</button>
+        </div>
+
+        <div class="field">
+          <label for="eventDateTime">Start date/time</label>
+          <input id="eventDateTime" name="eventDateTime" type="datetime-local" required />
+          <p class="muted small">This updates the countdown on this device.</p>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="saveDateBtn" value="confirm">Save</button>
+          <button class="btn btn-secondary" value="cancel">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
