@@ -91,4 +91,3 @@ Then visit `http://localhost:8000` in your browser.
 - No build process required
 - GitHub Pages will automatically serve them
 - Custom domains can be configured in repository Settings → Pages
-
